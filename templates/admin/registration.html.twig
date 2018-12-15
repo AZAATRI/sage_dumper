@@ -1,0 +1,43 @@
+{% extends 'admin/baseadmin.html.twig' %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Inscription</h1>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    <button type="submit" class="btn btn-success">Inscription</button>
+    {{ form_end(form) }}
+</div>
+
+    <script>
+        $(document).ready(function() {
+            var url = "{{ path('comemrcial_data') }}";
+            var mapper = {
+                'CO_Nom' : 'commercial_registration_lastname',
+                'CO_Prenom' : 'commercial_registration_firstname',
+                'CO_Fonction' : 'commercial_registration_function_name',
+                'CO_Ville' : 'commercial_registration_city',
+                'CO_Telephone' : 'commercial_registration_phone',
+                'CO_EMail' : 'commercial_registration_email'
+            };
+            $('#commercial_registration_c_key').change(function (e) {
+
+                var value = this.value;
+                $.ajax({
+                    type: "GET",
+                    url: url,
+                    dataType: "json",
+                    data: {'reference' : value},
+                    success: function(data) {
+                        var realData = data.data;
+                        $.each(mapper, function(i, val) {
+                            $("#" + val).val(realData[i]);
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+{% endblock %}

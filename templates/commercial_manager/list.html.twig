@@ -1,0 +1,50 @@
+{% extends 'admin/baseadmin.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    {% include 'datatablescss.html.twig' %}
+{% endblock stylesheets %}
+{% block javascripts %}
+    {{ parent() }}
+    {% include 'datatables.html.twig' %}
+{% endblock javascripts %}
+{% block body %}
+    <div class="container">
+        <table id="example" class="table table-striped table-bordered nowrap" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Reference</th>
+                    <th>Nom</th>
+                    <th>Prenom</th>
+                    <th>Login</th>
+                    <th>Fonction</th>
+                    <th>Ville</th>
+                    <th>Telephone</th>
+                    <th>Email</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for commercial in commercials %}
+                    <tr>
+                        <td>{{ commercial.cKey }}</td>
+                        <td>{{ commercial.lastname }}</td>
+                        <td>{{ commercial.firstname }}</td>
+                        <td>{{ commercial.user.username }}</td>
+                        <td>{{ commercial.functionName }}</td>
+                        <td>{{ commercial.city }}</td>
+                        <td>{{ commercial.phone }}</td>
+                        <td>{{ commercial.email }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+    <script>
+        $(document).ready(function() {
+            var table = $('#example').DataTable( {
+                responsive: true
+            } );
+
+            new $.fn.dataTable.FixedHeader( table );
+        } );
+    </script>
+{% endblock %}
