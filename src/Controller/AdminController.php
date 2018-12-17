@@ -28,30 +28,9 @@ class AdminController extends AbstractController
         ]);
     }
     /**
-     * @Route("/register", name="registration")
-     */
-    public function registration(Request $request, ObjectManager $em, UserPasswordEncoderInterface $encoder)
-    {
-        $commercial = new Commercial();
-        $form = $this->createForm(CommercialRegistrationType::class, $commercial);
-        $form->handleRequest($request);
-        if($form->isSubmitted() && $form->isValid()){
-            $user = $commercial->getUser();
-            $hash = $encoder->encodePassword($user,$user->getPassword());
-            $user->setPassword($hash);
-            $commercial->setUser($user);
-            $em->persist($commercial);
-            $em->flush();
-            $this->redirectToRoute('registration');
-        }
-        return $this->render('admin/registration.html.twig',array('form'=>$form->createView()));
-    }
-
-    /**
      * @Route("/commercials", name="comemrcials_list")
      */
     public function commercialsAction(){
-
         return array();
     }
 

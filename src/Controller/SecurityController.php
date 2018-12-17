@@ -5,8 +5,11 @@ namespace App\Controller;
 use App\Entity\User;
 use App\Form\CommercialRegistrationType;
 use App\Form\RegistrationType;
+use App\Form\ResetPasswordType;
+use App\Repository\UserRepository;
 use Doctrine\Common\Persistence\ObjectManager;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\FormError;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -46,7 +49,7 @@ class SecurityController extends AbstractController
         $roles = $this->getUser()->getRoles();
         switch(reset($roles)){
             case 'ROLE_ADMIN':
-                $route = 'admin_index';
+                $route = 'commercials_list';
                 break;
             case 'ROLE_COMMERCIAL':
                 $route = 'commercial_index';
@@ -56,4 +59,33 @@ class SecurityController extends AbstractController
         }
         return $this->redirectToRoute($route);
     }
+
+    /**
+     * @Route("/user/resetpassword", name="reset_password")
+     */
+    public function resetPassword(Request $request, UserPasswordEncoderInterface $encoder)
+    {
+        $user = $this->getUser();
+        $form = $this->createForm(ResetPasswordType::class);
+        $form->handleRequest($request);
+        $em = $this->getDoctrine()->getManager();
+        if($form->isSubmitted()){
+            if(! $encoder->isPasswordValid($user,$request->get('reset_password')['oldPassword'])){
+                $form->get('oldPassword')->addError(new FormError('Ancien mot de passe incorrect'));
+            }
+            if($form->isValid()){
+                $newEncodedPassword = $encoder->encodePassword($user,reset($request->get('reset_password')['password']));
+                $user->setPassword($newEncodedPassword);
+                $em->persist($user);
+                $em->flush();
+                $this->addFlash('notice', 'Votre mot de passe à bien été changé !');
+                return $this->redirectToRoute('commercials_list');
+            }
+        }
+
+        return $this->render('security/resetpassword.html.twig', array(
+            'form' => $form->createView(),
+        ));
+    }
+
 }

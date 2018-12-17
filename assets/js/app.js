@@ -13,6 +13,10 @@ const $ = require('jquery');
 // create global $ and jQuery variables
 global.$ = global.jQuery = $;
 require('bootstrap/dist/css/bootstrap.min.css');
+require('bootstrap');
+require('@fortawesome/fontawesome-free');
+require('@fortawesome/fontawesome-free/css/all.min.css');
+require('../css/app.css');
 // any CSS you require will output into a single css file (app.css in this case)
 
 // or you can include specific pieces

@@ -1,0 +1,89 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('datatables') }}
+{% endblock stylesheets %}
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('datatables') }}
+{% endblock javascripts %}
+{% block body %}
+    {{ parent() }}
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Hello</h1>
+        </div>
+    </div>
+    <section id="tabs">
+        <div class="container">
+            <h6 class="section-title h1">Client</h6>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="col-md-8">
+                        <nav>
+                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-details-tab" data-toggle="tab" href="#nav-details" role="tab" aria-controls="nav-details" aria-selected="true">Details</a>
+                                <a class="nav-item nav-link" id="nav-documents-tab" data-toggle="tab" href="#nav-documents" role="tab" aria-controls="nav-documents" aria-selected="false">Vente documents</a>
+                                <a class="nav-item nav-link" id="nav-documents-article-tab" data-toggle="tab" href="#nav-documents-article" role="tab" aria-controls="nav-documents-article" aria-selected="false">Vente documents par article</a>
+                                <a class="nav-item nav-link" id="nav-documents-line-tab" data-toggle="tab" href="#nav-documents-line" role="tab" aria-controls="nav-documents-line" aria-selected="false">Vente ligne de documents</a>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-details" role="tabpanel" aria-labelledby="nav-details-tab">
+                            {{ include('clients/clientDetails.html.twig') }}
+                        </div>
+                        <div class="tab-pane fade" id="nav-documents" role="tabpanel" aria-labelledby="nav-documents-tab">
+                            <div class="modal"></div>
+
+                        </div>
+                        <div class="tab-pane fade" id="nav-documents-article" role="tabpanel" aria-labelledby="nav-documents-article-tab">
+                        </div>
+                        <div class="tab-pane fade" id="nav-documents-line" role="tabpanel" aria-labelledby="nav-documents-line-tab">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        var clientId = '{{ client.Code_Client }}';
+        $("#nav-documents-tab").on('click',function(event) {
+            var url = '{{ path('getdocumentsforcurrentclient',{id : 'clientId'}) }}';
+            url = url.replace('clientId',clientId);
+            $.ajax({
+                type: "POST",
+                url:url,
+                success: function(data) {
+                    $("#nav-documents").append(data.response);
+                }
+            });
+            $(this).off('click');
+        });
+        $("#nav-documents-article-tab").on('click',function(event) {
+            var url = '{{ path('getdocumentsforcurrentclientbyarticles',{id : 'clientId'}) }}';
+            url = url.replace('clientId',clientId);
+            $.ajax({
+                type: "POST",
+                url:url,
+                success: function(data) {
+                    $("#nav-documents-article").append(data.response);
+                }
+            });
+            $(this).off('click');
+        });
+        $("#nav-documents-line-tab").on('click',function(event) {
+            var url = '{{ path('getlinedocumentsforcurrentclient',{id : 'clientId'}) }}';
+            url = url.replace('clientId',clientId);
+            $.ajax({
+                type: "POST",
+                url:url,
+                success: function(data) {
+                    $("#nav-documents-line").append(data.response);
+                }
+            });
+            $(this).off('click');
+        });
+    </script>
+{% endblock %}

@@ -8,8 +8,6 @@
 // Need jQuery? Install it with "yarn add jquery", then uncomment to require it.
 // var $ = require('jquery');
 // require jQuery normally
-
-require('./app.js');
 require('datatables.net-bs4');
 require('datatables.net-fixedheader-bs4');
 require('datatables.net-responsive-bs4');

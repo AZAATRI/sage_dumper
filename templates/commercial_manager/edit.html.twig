@@ -3,34 +3,16 @@
 {% block title %}{% endblock %}
 
 {% block body %}
-    {{ parent() }}
 <div class="container">
     <h1>Inscription</h1>
     {{ form_start(form) }}
-    {{ form_row(form.c_key) }}
-    <div id = "commercial_details">
-        {{ form_row(form.username) }}
-        {{ form_row(form.password.first) }}
-        {{ form_row(form.password.second) }}
-        {{ form_row(form.role_matcher) }}
-        {{ form_row(form.lastname) }}
-        {{ form_row(form.firstname) }}
-        {{ form_row(form.function_name) }}
-        {{ form_row(form.city) }}
-        {{ form_row(form.phone) }}
-        {{ form_row(form.email) }}
-        <button type="submit" class="btn btn-success">Inscription</button>
-    </div>
+    {{ form_widget(form) }}
+    <button type="submit" class="btn btn-success">Inscription</button>
     {{ form_end(form) }}
 </div>
 
     <script>
         $(document).ready(function() {
-            var registration_key = $('#commercial_registration_c_key');
-            if(! registration_key.val()){
-                $('#commercial_details').hide();
-            }
-
             var url = "{{ path('comemrcial_data') }}";
             var mapper = {
                 'CO_Nom' : 'commercial_registration_lastname',
@@ -40,7 +22,8 @@
                 'CO_Telephone' : 'commercial_registration_phone',
                 'CO_EMail' : 'commercial_registration_email'
             };
-            registration_key.change(function (e) {
+            $('#commercial_registration_c_key').change(function (e) {
+
                 var value = this.value;
                 $.ajax({
                     type: "GET",
@@ -52,10 +35,9 @@
                         $.each(mapper, function(i, val) {
                             $("#" + val).val(realData[i]);
                         });
-                        $('#commercial_details').show();
                     }
                 });
             });
-        }) ;
+        });
     </script>
 {% endblock %}

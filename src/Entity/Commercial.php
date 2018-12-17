@@ -19,7 +19,6 @@ class Commercial
     
     /**
      * @ORM\Column(type="string", length=255, nullable=false)
-     * @Assert\Length(min="2",minMessage="Votre nom doit faire 6 caracteres")
      *
      */
     private $lastname;
@@ -46,22 +45,23 @@ class Commercial
 
     /**
      * @ORM\Column(type="string", length=255, nullable=true)
-     * @Assert\Email(
-     *     message = "'{{ value }}' n'est pas un email valide"
-     * )
      */
     private $email;
 
     /**
      * @ORM\Column(type="string", length=255, nullable=false)
-     * @Assert\NotBlank(message="Veuillez choisir un commercial")
      */
     private $c_key;
 
     /**
+     * @ORM\Column(type="string", length=255, nullable=false)
+     *
+     */
+    private $password;
+
+    /**
      * @ORM\OneToOne(targetEntity="App\Entity\User", cascade={"persist", "remove"})
      * @ORM\JoinColumn(nullable=false)
-     * @Assert\Valid
      */
     private $user;
 
@@ -165,5 +165,22 @@ class Commercial
     {
         return $this->id;
     }
+
+    /**
+     * @return string
+     */
+    public function getPassword()
+    {
+        return $this->password;
+    }
+
+    /**
+     * @param string $password
+     */
+    public function setPassword($password)
+    {
+        $this->password = $password;
+    }
+
 
 }
