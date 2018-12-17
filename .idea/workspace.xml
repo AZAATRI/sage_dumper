@@ -3,25 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="341e6377-6567-4ba9-8f6d-4141c4bbfbef" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/app.css" afterPath="$PROJECT_DIR$/assets/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/app.js" afterPath="$PROJECT_DIR$/assets/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/datatables.js" afterPath="$PROJECT_DIR$/assets/js/datatables.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/packages/security.yaml" afterPath="$PROJECT_DIR$/config/packages/security.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/CommercialManagerController.php" afterPath="$PROJECT_DIR$/src/Controller/CommercialManagerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Entity/Commercial.php" afterPath="$PROJECT_DIR$/src/Entity/Commercial.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Form/CommercialRegistrationType.php" afterPath="$PROJECT_DIR$/src/Form/CommercialRegistrationType.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Form/RegistrationType.php" afterPath="$PROJECT_DIR$/src/Form/RegistrationType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/ClientsManagerController.php" afterPath="$PROJECT_DIR$/src/Controller/ClientsManagerController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Service/SqlServerManager.php" afterPath="$PROJECT_DIR$/src/Service/SqlServerManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony.lock" afterPath="$PROJECT_DIR$/symfony.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/registration.html.twig" afterPath="$PROJECT_DIR$/templates/admin/registration.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html.twig" afterPath="$PROJECT_DIR$/templates/base.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/commercial_manager/list.html.twig" afterPath="$PROJECT_DIR$/templates/commercial_manager/list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/clientDocumentsByArticles.html.twig" afterPath="$PROJECT_DIR$/templates/clients/clientDocumentsByArticles.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/clientLineDocuments.html.twig" afterPath="$PROJECT_DIR$/templates/clients/clientLineDocuments.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -33,61 +20,42 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="ClientsManagerController.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ClientsManagerController.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Controller/ClientsManagerController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1255">
-              <caret line="71" column="83" lean-forward="false" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="83" />
+            <state relative-caret-position="1288">
+              <caret line="87" column="95" lean-forward="false" selection-start-line="87" selection-start-column="95" selection-end-line="87" selection-end-column="95" />
               <folding>
-                <element signature="e#1279#1306#0#PHP" expanded="true" />
-                <element signature="e#1787#1822#0#PHP" expanded="true" />
-                <element signature="e#2484#2529#0#PHP" expanded="true" />
-                <element signature="e#3189#3228#0#PHP" expanded="true" />
+                <element signature="e#34#67#0#PHP" expanded="true" />
+                <element signature="e#947#974#0#PHP" expanded="true" />
+                <element signature="e#1455#1490#0#PHP" expanded="true" />
+                <element signature="e#2255#2300#0#PHP" expanded="true" />
+                <element signature="e#3051#3090#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="details.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/clients/details.html.twig">
+      <file leaf-file-name="SqlServerManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Service/SqlServerManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1519">
-              <caret line="85" column="33" lean-forward="false" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
+            <state relative-caret-position="539">
+              <caret line="72" column="20" lean-forward="false" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
               <folding>
-                <element signature="e#2856#2884#0#Twig" expanded="true" />
-                <element signature="e#3324#3362#0#Twig" expanded="true" />
-                <element signature="e#3807#3839#0#Twig" expanded="true" />
+                <element signature="e#6#87#0#PHP" expanded="true" />
+                <marker date="1545064273555" expanded="true" signature="645:838" ph="select CO_No... F_COLLABORATEUR" />
+                <marker date="1545064273555" expanded="true" signature="1119:1419" ph="select CO_No... F_COLLABORATEUR" />
+                <marker date="1545064273555" expanded="true" signature="1119:1456" ph="Select CT_Nu... F_COMPTET" />
+                <marker date="1545064273555" expanded="true" signature="1119:1586" ph="Select CT_Nu... F_COMPTET" />
+                <marker date="1545064273555" expanded="true" signature="1686:2043" ph="select CT_Nu... F_COMPTET" />
+                <marker date="1545064273555" expanded="true" signature="1686:2044" ph="select CT_Nu... F_COMPTET" />
+                <marker date="1545064273555" expanded="true" signature="1686:2055" ph="select CT_Nu... F_COMPTET" />
+                <marker date="1545064273555" expanded="true" signature="2261:2980" ph="select E.DO_... F_DOCLIGNE" />
+                <marker date="1545064273555" expanded="true" signature="2261:2981" ph="select E.DO_... F_DOCLIGNE" />
+                <marker date="1545064273555" expanded="true" signature="3194:3983" ph="select E.DO_... F_DOCLIGNE" />
+                <marker date="1545064273555" expanded="true" signature="4189:4744" ph="select E.DO_... F_DOCLIGNE" />
+                <marker date="1545064273555" expanded="true" signature="4936:5140" ph="select E.DO_... F_DOCLIGNE" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clientDocuments.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/clients/clientDocuments.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="561">
-              <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clientDocumentsByArticles.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/clients/clientDocumentsByArticles.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1155">
-              <caret line="35" column="52" lean-forward="false" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="clientLineDocuments.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/clients/clientLineDocuments.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -186,14 +154,14 @@
         <option value="$PROJECT_DIR$/templates/clients/clients.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/ArticlesManagerController.php" />
         <option value="$PROJECT_DIR$/src/Controller/DocumentsManagerController.php" />
-        <option value="$PROJECT_DIR$/templates/clients/clientLineDocuments.html.twig" />
-        <option value="$PROJECT_DIR$/src/Service/SqlServerManager.php" />
-        <option value="$PROJECT_DIR$/templates/clients/clientDocumentsByArticles.html.twig" />
-        <option value="$PROJECT_DIR$/templates/clients/clientDocuments.html.twig" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/assets/css/app.css" />
-        <option value="$PROJECT_DIR$/src/Controller/ClientsManagerController.php" />
         <option value="$PROJECT_DIR$/templates/clients/details.html.twig" />
+        <option value="$PROJECT_DIR$/src/Service/SqlServerManager.php" />
+        <option value="$PROJECT_DIR$/src/Controller/ClientsManagerController.php" />
+        <option value="$PROJECT_DIR$/templates/clients/clientLineDocuments.html.twig" />
+        <option value="$PROJECT_DIR$/templates/clients/clientDocuments.html.twig" />
+        <option value="$PROJECT_DIR$/templates/clients/clientDocumentsByArticles.html.twig" />
       </list>
     </option>
   </component>
@@ -650,12 +618,12 @@
       <workItem from="1544812367722" duration="6890000" />
       <workItem from="1544885467260" duration="13119000" />
       <workItem from="1544954871360" duration="34565000" />
-      <workItem from="1545045200870" duration="11183000" />
+      <workItem from="1545045200870" duration="14815000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="124654000" />
+    <option name="totallyTimeSpent" value="128286000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="7667" y="-13" width="3710" height="2018" extended-state="6" />
@@ -990,48 +958,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/clientDocumentsByArticles.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="35" column="52" lean-forward="false" selection-start-line="35" selection-start-column="52" selection-end-line="35" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/DocumentsManagerController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/clientLineDocuments.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="25" lean-forward="false" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/SqlServerManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="49" column="31" lean-forward="false" selection-start-line="49" selection-start-column="25" selection-end-line="49" selection-end-column="31" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1545058049510" expanded="true" signature="645:838" ph="select CO_No... F_COLLABORATEUR" />
-            <marker date="1545058049510" expanded="true" signature="1119:1419" ph="select CO_No... F_COLLABORATEUR" />
-            <marker date="1545058049510" expanded="true" signature="1119:1456" ph="Select CT_Nu... F_COMPTET" />
-            <marker date="1545058049510" expanded="true" signature="1119:1586" ph="Select CT_Nu... F_COMPTET" />
-            <marker date="1545058049510" expanded="true" signature="1686:2043" ph="select CT_Nu... F_COMPTET" />
-            <marker date="1545058049510" expanded="true" signature="1686:2044" ph="select CT_Nu... F_COMPTET" />
-            <marker date="1545058049510" expanded="true" signature="1686:2055" ph="select CT_Nu... F_COMPTET" />
-            <marker date="1545058049510" expanded="true" signature="2261:2980" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545058049510" expanded="true" signature="2261:2981" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545058049510" expanded="true" signature="3194:3983" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545058049510" expanded="true" signature="4189:4744" ph="select E.DO_... F_DOCLIGNE" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1059,35 +990,74 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/clients/details.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="52" column="13" lean-forward="false" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+          <folding>
+            <element signature="e#2856#2884#0#Twig" expanded="true" />
+            <element signature="e#3324#3362#0#Twig" expanded="true" />
+            <element signature="e#3807#3839#0#Twig" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Service/SqlServerManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="72" column="20" lean-forward="false" selection-start-line="72" selection-start-column="20" selection-end-line="72" selection-end-column="20" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+            <marker date="1545064273555" expanded="true" signature="645:838" ph="select CO_No... F_COLLABORATEUR" />
+            <marker date="1545064273555" expanded="true" signature="1119:1419" ph="select CO_No... F_COLLABORATEUR" />
+            <marker date="1545064273555" expanded="true" signature="1119:1456" ph="Select CT_Nu... F_COMPTET" />
+            <marker date="1545064273555" expanded="true" signature="1119:1586" ph="Select CT_Nu... F_COMPTET" />
+            <marker date="1545064273555" expanded="true" signature="1686:2043" ph="select CT_Nu... F_COMPTET" />
+            <marker date="1545064273555" expanded="true" signature="1686:2044" ph="select CT_Nu... F_COMPTET" />
+            <marker date="1545064273555" expanded="true" signature="1686:2055" ph="select CT_Nu... F_COMPTET" />
+            <marker date="1545064273555" expanded="true" signature="2261:2980" ph="select E.DO_... F_DOCLIGNE" />
+            <marker date="1545064273555" expanded="true" signature="2261:2981" ph="select E.DO_... F_DOCLIGNE" />
+            <marker date="1545064273555" expanded="true" signature="3194:3983" ph="select E.DO_... F_DOCLIGNE" />
+            <marker date="1545064273555" expanded="true" signature="4189:4744" ph="select E.DO_... F_DOCLIGNE" />
+            <marker date="1545064273555" expanded="true" signature="4936:5140" ph="select E.DO_... F_DOCLIGNE" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/clients/clientLineDocuments.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/clients/clientDocuments.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="17" column="48" lean-forward="false" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
+        <state relative-caret-position="231">
+          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/clients/clientDocumentsByArticles.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1188">
+          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ClientsManagerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1255">
-          <caret line="71" column="83" lean-forward="false" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="83" />
+        <state relative-caret-position="1288">
+          <caret line="87" column="95" lean-forward="false" selection-start-line="87" selection-start-column="95" selection-end-line="87" selection-end-column="95" />
           <folding>
-            <element signature="e#1279#1306#0#PHP" expanded="true" />
-            <element signature="e#1787#1822#0#PHP" expanded="true" />
-            <element signature="e#2484#2529#0#PHP" expanded="true" />
-            <element signature="e#3189#3228#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/details.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1519">
-          <caret line="85" column="33" lean-forward="false" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-          <folding>
-            <element signature="e#2856#2884#0#Twig" expanded="true" />
-            <element signature="e#3324#3362#0#Twig" expanded="true" />
-            <element signature="e#3807#3839#0#Twig" expanded="true" />
+            <element signature="e#34#67#0#PHP" expanded="true" />
+            <element signature="e#947#974#0#PHP" expanded="true" />
+            <element signature="e#1455#1490#0#PHP" expanded="true" />
+            <element signature="e#2255#2300#0#PHP" expanded="true" />
+            <element signature="e#3051#3090#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

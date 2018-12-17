@@ -99,5 +99,14 @@ order by E.DO_Piece";
         return $result;
     }
 
+    public function getStockArticles(){
+        $query = "Select AR_Ref,A.DE_No,D.DE_Intitule,sum(AS_QteSto) Qte_Stock,SUM(AS_MontSto) Montant_Stock
+from F_ARTSTOCK A inner join F_DEPOT D on A.DE_No = D.DE_No
+group by AR_Ref,A.DE_No,D.DE_Intitule
+order by AR_Ref";
+        $query = $this->_pdo->query($query);
+        $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+        return $result;
+    }
 
 }

@@ -5,12 +5,13 @@
             <th>Piece</th>
             <th>Date</th>
             <th>Reference</th>
-            <th>Intitulé</th>
+            <th>Dépot</th>
             <th>Article</th>
             <th>Quantité</th>
             <th>PU</th>
             <th>MTHT</th>
             <th>MTTTC</th>
+            <td>Stock</td>
         </tr>
         </thead>
         <tbody>
@@ -25,6 +26,7 @@
                 <td>{{ document.DL_PrixUnitaire|number_format(3) }}</td>
                 <td>{{ document.DL_MontantHT|number_format(3) }}</td>
                 <td>{{ document.DL_MontantTTC|number_format(3) }}</td>
+                <td>{{ document.Qte_Stock }}</td>
             </tr>
         {% endfor %}
         </tbody>
