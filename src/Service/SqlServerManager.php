@@ -98,15 +98,51 @@ order by E.DO_Piece";
         $result = $query->fetchAll(\PDO::FETCH_ASSOC);
         return $result;
     }
-
-    public function getStockArticles(){
-        $query = "Select AR_Ref,A.DE_No,D.DE_Intitule,sum(AS_QteSto) Qte_Stock,SUM(AS_MontSto) Montant_Stock
-from F_ARTSTOCK A inner join F_DEPOT D on A.DE_No = D.DE_No
-group by AR_Ref,A.DE_No,D.DE_Intitule
-order by AR_Ref";
+    public function getDocumentsByArticleByLine($ref, $commercialRef){
+        $query = "select E.DO_Type,E.DO_Piece,E.DO_Date,E.DO_Ref Ref_Document,E.DO_Tiers,C.CT_Intitule,C.CT_Num,E.CO_No,Col.CO_Nom,Col.CO_Prenom,E.DE_No,F_depot.DE_Intitule,L.AR_Ref,DL_Design,DL_Qte,DL_PrixUnitaire,DL_MontantHT,DL_MontantTTC
+from F_DOCLIGNE L 
+inner join F_DOCENTETE E on L.DO_Piece = E.DO_Piece and L.DO_Domaine = E.DO_Domaine and L.DO_Type = E.DO_Type
+inner join F_COMPTET C on C.CT_Num = E.DO_Tiers
+left join F_COLLABORATEUR COL on COL.CO_No = E.CO_No
+left join F_depot on F_depot.DE_No = E.DE_No
+where E.DO_Domaine = 0 and L.AR_Ref = '$ref' and COL.CO_No = '$commercialRef'
+order by E.DO_Piece";
         $query = $this->_pdo->query($query);
         $result = $query->fetchAll(\PDO::FETCH_ASSOC);
         return $result;
     }
 
+    public function getArticles(){
+        $query = "select A.AR_Ref,A.AR_Design,A.FA_CodeFamille,F.FA_Intitule,AR_PrixVen,AR_CodeBarre,AR_Pays
+from F_ARTICLE A inner join F_FAMILLE F on F.FA_CodeFamille = A.FA_CodeFamille";
+        $query = $this->_pdo->query($query);
+        $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+        return $result;
+    }
+    public function getStockArticles($fetchStyle = \PDO::FETCH_ASSOC){
+        $query = "Select AR_Ref,A.DE_No,D.DE_Intitule,sum(AS_QteSto) Qte_Stock,SUM(AS_MontSto) Montant_Stock
+from F_ARTSTOCK A inner join F_DEPOT D on A.DE_No = D.DE_No
+group by AR_Ref,A.DE_No,D.DE_Intitule
+order by AR_Ref";
+        $query = $this->_pdo->query($query);
+        $result = $query->fetchAll($fetchStyle);
+        return $result;
+    }
+    public function getCurrentArticle($ref){
+        $query = "select A.AR_Ref,A.AR_Design,A.FA_CodeFamille,F.FA_Intitule,AR_PrixVen,AR_CodeBarre,AR_Pays
+from F_ARTICLE A inner join F_FAMILLE F on F.FA_CodeFamille = A.FA_CodeFamille where A.AR_Ref = '$ref'";
+        $query = $this->_pdo->query($query);
+        $result = $query->fetch(\PDO::FETCH_ASSOC);
+        return $result;
+    }
+    public function getStockByArticle($ref){
+        $query = "Select AR_Ref,A.DE_No,D.DE_Intitule,D.DE_Adresse,D.DE_Ville,sum(AS_QteSto) Qte_Stock,SUM(AS_MontSto) Montant_Stock
+from F_ARTSTOCK A inner join F_DEPOT D on A.DE_No = D.DE_No
+where AR_Ref = '$ref'
+group by AR_Ref,A.DE_No,D.DE_Intitule,D.DE_Adresse,D.DE_Ville
+order by AR_Ref";
+        $query = $this->_pdo->query($query);
+        $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+        return $result;
+    }
 }

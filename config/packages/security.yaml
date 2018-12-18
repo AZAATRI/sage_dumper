@@ -39,4 +39,6 @@ security:
     access_control:
         - { path: ^/admin, roles: ROLE_ADMIN }
         - { path: ^/commercial, roles: ROLE_COMMERCIAL }
+        - { path: ^/clients, roles: ROLE_COMMERCIAL }
+        - { path: ^/articles, roles: ROLE_COMMERCIAL }
         - { path: ^/user, roles: IS_AUTHENTICATED_FULLY }

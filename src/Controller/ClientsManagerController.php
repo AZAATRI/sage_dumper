@@ -89,6 +89,5 @@ class ClientsManagerController extends BaseCommercialController
                             ? (int) $indexedStocks[$data['AR_Ref']][$data['DE_No']]['Qte_Stock'] : 0;
         }
         return $dataWithArticlesAndDepot;
-
     }
 }

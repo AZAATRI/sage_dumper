@@ -1,0 +1,37 @@
+<div class="container">
+    <table id="article_stock" class="table table-striped table-bordered nowrap table-hover" style="width:100%">
+        <thead>
+        <tr>
+            <th>Intitulé du déport</th>
+            <th>Numéro du dépot</th>
+            <th>Adresse</th>
+            <th>Ville</th>
+            <th>Stock</th>
+            <th>Montant Stock</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for depot in depots %}
+            <tr>
+                <td>{{ depot.DE_Intitule }}</td>
+                <td>{{ depot.DE_No }}</td>
+                <td>{{ depot.DE_Adresse }}</td>
+                <td>{{ depot.DE_Ville }}</td>
+                <td>{{ depot.Qte_Stock|number_format(0) }}</a></td>
+                <td>{{ depot.Montant_Stock|number_format(3) }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<script>
+    $(document).ready(function() {
+        var table = $('#article_stock').DataTable( {
+            responsive: true
+        } );/*
+        $('#client_documents tbody ').on('click', 'tr', function () {
+            window.location.href = $(this).data('href');
+        } );*/
+
+    } );
+</script>

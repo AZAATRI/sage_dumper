@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+{% block stylesheets %}
+    {{ parent() }}
+    {{ encore_entry_link_tags('datatables') }}
+{% endblock stylesheets %}
+{% block javascripts %}
+    {{ parent() }}
+    {{ encore_entry_script_tags('datatables') }}
+{% endblock javascripts %}
+{% block body %}
+    {{ parent() }}
+    <div class="container">
+        <div class="col-md-12">
+            <table id="articles_list" class="table table-striped table-bordered nowrap table-hover" style="width:100%">
+                <thead>
+                <tr>
+                    <th>Ref</th>
+                    <th>Design</th>
+                    <th>Code Famille</th>
+                    <th>Intitulé Famille</th>
+                    <th>Prix vente</th>
+                    <th>Code barre</th>
+                    <th>Stock</th>
+                </tr>
+                </thead>
+                <tbody>
+                {% for article in articles %}
+                    <tr data-href="{{ path('article_details',{ref : article.slug}) }}">
+                        <td>{{ article.AR_Ref }}</td>
+                        <td>{{ article.AR_Design }}</td>
+                        <td>{{ article.FA_CodeFamille }}</td>
+                        <td>{{ article.FA_Intitule }}</td>
+                        <td>{{ article.AR_PrixVen|number_format(3) }}</a></td>
+                        <td>{{ article.AR_CodeBarre }}</td>
+                        <td>{{ article.stock }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            var table = $('#articles_list').DataTable( {
+                responsive: true
+            } );
+            $('#articles_list tbody ').on('click', 'tr', function () {
+                window.location.href = $(this).data('href');
+            } );
+        } );
+    </script>
+{% endblock %}

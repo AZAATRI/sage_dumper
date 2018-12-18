@@ -1,0 +1,59 @@
+<div class="container">
+    <table>
+        <tr>
+            <td>
+                <strong>Reference article: </strong>
+            </td>
+            <td>{{ article.AR_Ref }}</td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Design: </strong>
+            </td>
+            <td>
+                {{ article.AR_Design }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Code famille: </strong>
+            </td>
+            <td>
+                {{ article.FA_CodeFamille }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Intitulé: </strong>
+            </td>
+            <td>
+                {{ article.FA_Intitule }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Prix de vente </strong>
+            </td>
+            <td>
+                {{ article.AR_PrixVen|number_format(3) }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Code barre: </strong>
+            </td>
+            <td>
+                {{ article.AR_CodeBarre }}
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Pays: </strong>
+            </td>
+            <td>
+                {{ article.AR_Pays }}
+            </td>
+        </tr>
+    </table>
+
+</div>
