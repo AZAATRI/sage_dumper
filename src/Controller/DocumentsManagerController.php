@@ -20,14 +20,14 @@ class DocumentsManagerController extends BaseCommercialController
 {
 
     /**
-     * @Route("/documents/details", name="documents_details")
+     * @Route("/documents", name="documents_details")
      */
-    public function details($id,SqlServerManager $sqlServerManager) : Response
+    public function details() : Response
     {
         return $this->render('documents/details.html.twig');
     }
     /**
-     * @Route("/commercials/documents", name="getdocumentsforcurrentcommercial")
+     * @Route("/commercial/documents", name="getdocumentsforcurrentcommercial")
      */
     public function commercialDocuments(Request $request,SqlServerManager $sqlServerManager) : Response
     {
@@ -42,7 +42,7 @@ class DocumentsManagerController extends BaseCommercialController
         return new JsonResponse($jsonResponse);
     }
     /**
-     * @Route("/commercials/docbyarticles", name="getdocumentsforcurrentcommercialbyarticles")
+     * @Route("/commercial/docbyarticles", name="getdocumentsforcurrentcommercialbyarticles")
      */
     public function commercialDocumentsByArticles(Request $request,SqlServerManager $sqlServerManager) : Response
     {
@@ -58,7 +58,7 @@ class DocumentsManagerController extends BaseCommercialController
         return new JsonResponse($jsonResponse);
     }
     /**
-     * @Route("/commercials/documentlines", name="getlinedocumentsforcurrentcommercial")
+     * @Route("/commercial/documentlines", name="getlinedocumentsforcurrentcommercial")
      */
     public function commercialLineDocuments(Request $request,SqlServerManager $sqlServerManager) : Response
     {
