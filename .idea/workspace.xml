@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="341e6377-6567-4ba9-8f6d-4141c4bbfbef" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/app.css" afterPath="$PROJECT_DIR$/assets/css/app.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/packages/security.yaml" afterPath="$PROJECT_DIR$/config/packages/security.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/ArticlesManagerController.php" afterPath="$PROJECT_DIR$/src/Controller/ArticlesManagerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/ClientsManagerController.php" afterPath="$PROJECT_DIR$/src/Controller/ClientsManagerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/DocumentsManagerController.php" afterPath="$PROJECT_DIR$/src/Controller/DocumentsManagerController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Service/SqlServerManager.php" afterPath="$PROJECT_DIR$/src/Service/SqlServerManager.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/symfony.lock" afterPath="$PROJECT_DIR$/symfony.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/details.html.twig" afterPath="$PROJECT_DIR$/templates/clients/details.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,29 +15,73 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="SqlServerManager.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ClientsManagerController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ClientsManagerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1066">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="91" selection-end-column="5" />
+              <folding>
+                <element signature="e#34#67#0#PHP" expanded="true" />
+                <element signature="e#947#974#0#PHP" expanded="true" />
+                <element signature="e#1455#1490#0#PHP" expanded="true" />
+                <element signature="e#2255#2300#0#PHP" expanded="true" />
+                <element signature="e#3051#3090#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SqlServerManager.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Service/SqlServerManager.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="650">
-              <caret line="101" column="112" lean-forward="false" selection-start-line="101" selection-start-column="112" selection-end-line="101" selection-end-column="112" />
+            <state relative-caret-position="1079">
+              <caret line="169" column="57" lean-forward="true" selection-start-line="169" selection-start-column="57" selection-end-line="169" selection-end-column="57" />
               <folding>
                 <element signature="e#6#87#0#PHP" expanded="true" />
-                <marker date="1545091569493" expanded="true" signature="645:838" ph="select CO_No... F_COLLABORATEUR" />
-                <marker date="1545091569493" expanded="true" signature="1119:1419" ph="select CO_No... F_COLLABORATEUR" />
-                <marker date="1545091569493" expanded="true" signature="1119:1456" ph="Select CT_Nu... F_COMPTET" />
-                <marker date="1545091569493" expanded="true" signature="1119:1586" ph="Select CT_Nu... F_COMPTET" />
-                <marker date="1545091569493" expanded="true" signature="1686:2043" ph="select CT_Nu... F_COMPTET" />
-                <marker date="1545091569493" expanded="true" signature="1686:2044" ph="select CT_Nu... F_COMPTET" />
-                <marker date="1545091569493" expanded="true" signature="1686:2055" ph="select CT_Nu... F_COMPTET" />
-                <marker date="1545091569493" expanded="true" signature="2261:2980" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545091569493" expanded="true" signature="2261:2981" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545091569493" expanded="true" signature="3194:3983" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545091569493" expanded="true" signature="4189:4744" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545091569493" expanded="true" signature="4966:5562" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545091569493" expanded="true" signature="5749:5918" ph="select A.AR_... F_ARTICLE" />
-                <marker date="1545091569493" expanded="true" signature="6140:6344" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545091569493" expanded="true" signature="6534:6727" ph="select A.AR_... F_ARTICLE" />
-                <marker date="1545091569493" expanded="true" signature="6920:7194" ph="Select AR_Re... F_ARTSTOCK" />
+                <marker date="1545099363148" expanded="true" signature="645:838" ph="select CO_No... F_COLLABORATEUR" />
+                <marker date="1545099363148" expanded="true" signature="1119:1419" ph="select CO_No... F_COLLABORATEUR" />
+                <marker date="1545099363148" expanded="true" signature="1119:1456" ph="Select CT_Nu... F_COMPTET" />
+                <marker date="1545099363148" expanded="true" signature="1119:1586" ph="Select CT_Nu... F_COMPTET" />
+                <marker date="1545099363148" expanded="true" signature="1686:2043" ph="select CT_Nu... F_COMPTET" />
+                <marker date="1545099363148" expanded="true" signature="1686:2044" ph="select CT_Nu... F_COMPTET" />
+                <marker date="1545099363148" expanded="true" signature="1686:2055" ph="select CT_Nu... F_COMPTET" />
+                <marker date="1545099363148" expanded="true" signature="2261:2980" ph="select E.DO_... F_DOCLIGNE" />
+                <marker date="1545099363148" expanded="true" signature="2261:2981" ph="select E.DO_... F_DOCLIGNE" />
+                <marker date="1545099363148" expanded="true" signature="3194:3983" ph="select E.DO_... F_DOCLIGNE" />
+                <marker date="1545099363148" expanded="true" signature="4189:4744" ph="select E.DO_... F_DOCLIGNE" />
+                <marker date="1545099363148" expanded="true" signature="4966:5562" ph="select E.DO_... F_DOCLIGNE" />
+                <marker date="1545099363148" expanded="true" signature="5749:5918" ph="select A.AR_... F_ARTICLE" />
+                <marker date="1545099363148" expanded="true" signature="6140:6344" ph="select E.DO_... F_DOCLIGNE" />
+                <marker date="1545099363148" expanded="true" signature="6534:6727" ph="select A.AR_... F_ARTICLE" />
+                <marker date="1545099363148" expanded="true" signature="6920:7194" ph="Select AR_Re... F_ARTSTOCK" />
+                <marker date="1545099363148" expanded="true" signature="7407:8168" ph="Select AR_Re... F_ARTSTOCK" />
+                <marker date="1545099363148" expanded="true" signature="8391:9191" ph="select E.DO_... F_DOCLIGNE" />
+                <marker date="1545099363148" expanded="true" signature="9411:9976" ph="select E.DO_... F_DOCLIGNE" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="details.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/documents/details.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1739">
+              <caret line="54" column="15" lean-forward="true" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DocumentsManagerController.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Controller/DocumentsManagerController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1508">
+              <caret line="82" column="60" lean-forward="true" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
+              <folding>
+                <element signature="e#854#883#1#PHP" expanded="true" />
+                <element signature="e#1361#1402#0#PHP" expanded="true" />
+                <element signature="e#2211#2262#0#PHP" expanded="true" />
+                <element signature="e#3057#3102#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,8 +119,8 @@
       <find>:&lt;/strong&gt;</find>
       <find>F_DOCLIGNE</find>
       <find>about</find>
-      <find>client</find>
       <find>getCommer</find>
+      <find>client</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -94,6 +130,7 @@
       <replace>documents-article</replace>
       <replace>documents-line</replace>
       <replace>article</replace>
+      <replace>commercial</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\wamp64\www\ciel_dumper\templates</dir>
@@ -105,7 +142,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/security/registration.html.twig" />
         <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/templates/commercial/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/CommercialController.php" />
@@ -139,7 +175,6 @@
         <option value="$PROJECT_DIR$/src/Controller/ClientsManager.php" />
         <option value="$PROJECT_DIR$/src/Controller/BaseCommercialController.php" />
         <option value="$PROJECT_DIR$/templates/clients/clientDetails.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/DocumentsManagerController.php" />
         <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/templates/clients/clientLineDocuments.html.twig" />
         <option value="$PROJECT_DIR$/templates/clients/clientDocuments.html.twig" />
@@ -154,8 +189,10 @@
         <option value="$PROJECT_DIR$/templates/articles/articlesDepot.html.twig" />
         <option value="$PROJECT_DIR$/templates/articles/details.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/ArticlesManagerController.php" />
-        <option value="$PROJECT_DIR$/src/Service/SqlServerManager.php" />
         <option value="$PROJECT_DIR$/templates/articles/articleLineDocuments.html.twig" />
+        <option value="$PROJECT_DIR$/src/Service/SqlServerManager.php" />
+        <option value="$PROJECT_DIR$/templates/documents/details.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/DocumentsManagerController.php" />
       </list>
     </option>
   </component>
@@ -270,6 +307,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ciel_dumper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ciel_dumper" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="documents" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -460,11 +515,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\ciel_dumper\templates\documents" />
       <recent name="C:\wamp64\www\ciel_dumper\templates\articles" />
       <recent name="C:\wamp64\www\ciel_dumper\templates\clients" />
       <recent name="C:\wamp64\www\ciel_dumper\src\Controller" />
       <recent name="C:\wamp64\www\ciel_dumper\templates\commercial" />
-      <recent name="C:\wamp64\www\ciel_dumper\templates\security" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\ciel_dumper\templates\clients" />
@@ -576,12 +631,12 @@
       <workItem from="1544812367722" duration="6890000" />
       <workItem from="1544885467260" duration="13119000" />
       <workItem from="1544954871360" duration="34565000" />
-      <workItem from="1545045200870" duration="29251000" />
+      <workItem from="1545045200870" duration="31577000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="142722000" />
+    <option name="totallyTimeSpent" value="145048000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-13" y="-13" width="3866" height="2106" extended-state="6" />
@@ -619,33 +674,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Controller/TestController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="45" lean-forward="false" selection-start-line="18" selection-start-column="45" selection-end-line="18" selection-end-column="45" />
-          <folding>
-            <element signature="e#33#66#0#PHP" expanded="false" />
-            <marker date="1544477441313" expanded="true" signature="849:874" ph="SELECT * FRO... F_DEPOT" />
-            <marker date="1544477441313" expanded="true" signature="1051:1076" ph="SELECT * FRO... F_DEPOT" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/CommercialEdit.php" />
-    <entry file="file://$PROJECT_DIR$/templates/commercial_manager/edit.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="15" column="32" lean-forward="false" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/options-resolver/OptionsResolver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5973">
-          <caret line="27" column="6" lean-forward="false" selection-start-line="27" selection-start-column="6" selection-end-line="27" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/form/AbstractType.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="892">
@@ -805,14 +833,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
           <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DocumentsManagerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -980,20 +1000,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ClientsManagerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="649">
-          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
-          <folding>
-            <element signature="e#34#67#0#PHP" expanded="true" />
-            <element signature="e#947#974#0#PHP" expanded="true" />
-            <element signature="e#1455#1490#0#PHP" expanded="true" />
-            <element signature="e#2255#2300#0#PHP" expanded="true" />
-            <element signature="e#3051#3090#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/articles/articleLineDocuments.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1089">
@@ -1027,26 +1033,88 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Service/SqlServerManager.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="650">
-          <caret line="101" column="112" lean-forward="false" selection-start-line="101" selection-start-column="112" selection-end-line="101" selection-end-column="112" />
+        <state relative-caret-position="1079">
+          <caret line="169" column="57" lean-forward="true" selection-start-line="169" selection-start-column="57" selection-end-line="169" selection-end-column="57" />
           <folding>
             <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1545091569493" expanded="true" signature="645:838" ph="select CO_No... F_COLLABORATEUR" />
-            <marker date="1545091569493" expanded="true" signature="1119:1419" ph="select CO_No... F_COLLABORATEUR" />
-            <marker date="1545091569493" expanded="true" signature="1119:1456" ph="Select CT_Nu... F_COMPTET" />
-            <marker date="1545091569493" expanded="true" signature="1119:1586" ph="Select CT_Nu... F_COMPTET" />
-            <marker date="1545091569493" expanded="true" signature="1686:2043" ph="select CT_Nu... F_COMPTET" />
-            <marker date="1545091569493" expanded="true" signature="1686:2044" ph="select CT_Nu... F_COMPTET" />
-            <marker date="1545091569493" expanded="true" signature="1686:2055" ph="select CT_Nu... F_COMPTET" />
-            <marker date="1545091569493" expanded="true" signature="2261:2980" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545091569493" expanded="true" signature="2261:2981" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545091569493" expanded="true" signature="3194:3983" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545091569493" expanded="true" signature="4189:4744" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545091569493" expanded="true" signature="4966:5562" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545091569493" expanded="true" signature="5749:5918" ph="select A.AR_... F_ARTICLE" />
-            <marker date="1545091569493" expanded="true" signature="6140:6344" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545091569493" expanded="true" signature="6534:6727" ph="select A.AR_... F_ARTICLE" />
-            <marker date="1545091569493" expanded="true" signature="6920:7194" ph="Select AR_Re... F_ARTSTOCK" />
+            <marker date="1545099363148" expanded="true" signature="645:838" ph="select CO_No... F_COLLABORATEUR" />
+            <marker date="1545099363148" expanded="true" signature="1119:1419" ph="select CO_No... F_COLLABORATEUR" />
+            <marker date="1545099363148" expanded="true" signature="1119:1456" ph="Select CT_Nu... F_COMPTET" />
+            <marker date="1545099363148" expanded="true" signature="1119:1586" ph="Select CT_Nu... F_COMPTET" />
+            <marker date="1545099363148" expanded="true" signature="1686:2043" ph="select CT_Nu... F_COMPTET" />
+            <marker date="1545099363148" expanded="true" signature="1686:2044" ph="select CT_Nu... F_COMPTET" />
+            <marker date="1545099363148" expanded="true" signature="1686:2055" ph="select CT_Nu... F_COMPTET" />
+            <marker date="1545099363148" expanded="true" signature="2261:2980" ph="select E.DO_... F_DOCLIGNE" />
+            <marker date="1545099363148" expanded="true" signature="2261:2981" ph="select E.DO_... F_DOCLIGNE" />
+            <marker date="1545099363148" expanded="true" signature="3194:3983" ph="select E.DO_... F_DOCLIGNE" />
+            <marker date="1545099363148" expanded="true" signature="4189:4744" ph="select E.DO_... F_DOCLIGNE" />
+            <marker date="1545099363148" expanded="true" signature="4966:5562" ph="select E.DO_... F_DOCLIGNE" />
+            <marker date="1545099363148" expanded="true" signature="5749:5918" ph="select A.AR_... F_ARTICLE" />
+            <marker date="1545099363148" expanded="true" signature="6140:6344" ph="select E.DO_... F_DOCLIGNE" />
+            <marker date="1545099363148" expanded="true" signature="6534:6727" ph="select A.AR_... F_ARTICLE" />
+            <marker date="1545099363148" expanded="true" signature="6920:7194" ph="Select AR_Re... F_ARTSTOCK" />
+            <marker date="1545099363148" expanded="true" signature="7407:8168" ph="Select AR_Re... F_ARTSTOCK" />
+            <marker date="1545099363148" expanded="true" signature="8391:9191" ph="select E.DO_... F_DOCLIGNE" />
+            <marker date="1545099363148" expanded="true" signature="9411:9976" ph="select E.DO_... F_DOCLIGNE" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documents/details.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1739">
+          <caret line="54" column="15" lean-forward="true" selection-start-line="54" selection-start-column="15" selection-end-line="54" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ClientsManagerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1066">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="91" selection-end-column="5" />
+          <folding>
+            <element signature="e#34#67#0#PHP" expanded="true" />
+            <element signature="e#947#974#0#PHP" expanded="true" />
+            <element signature="e#1455#1490#0#PHP" expanded="true" />
+            <element signature="e#2255#2300#0#PHP" expanded="true" />
+            <element signature="e#3051#3090#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documents/commercialDocuments.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documents/commercialDocumentsByArticles.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documents/commercialLineDocuments.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/DocumentsManagerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1508">
+          <caret line="82" column="60" lean-forward="true" selection-start-line="82" selection-start-column="60" selection-end-line="82" selection-end-column="60" />
+          <folding>
+            <element signature="e#854#883#1#PHP" expanded="true" />
+            <element signature="e#1361#1402#0#PHP" expanded="true" />
+            <element signature="e#2211#2262#0#PHP" expanded="true" />
+            <element signature="e#3057#3102#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

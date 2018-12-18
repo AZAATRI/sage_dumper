@@ -145,4 +145,46 @@ order by AR_Ref";
         $result = $query->fetchAll(\PDO::FETCH_ASSOC);
         return $result;
     }
+    public function getDocumentsByCommercial($commercialRef){
+        $query = "select E.DO_Type,E.DO_Piece,E.DO_Date,E.DO_Ref Ref_Document,E.DO_Tiers,C.CT_Intitule,E.CO_No,Col.CO_Nom,Col.CO_Prenom,E.DE_No,F_depot.DE_Intitule,Sum(DL_Qte) Qte,Sum(DL_PrixUnitaire) PU,Sum(DL_MontantHT) MontantHT,Sum(DL_MontantTTC) MontantTTC
+    from F_DOCLIGNE L 
+    inner join F_DOCENTETE E on L.DO_Piece = E.DO_Piece and L.DO_Domaine = E.DO_Domaine and L.DO_Type = E.DO_Type
+    inner join F_COMPTET C on C.CT_Num = E.DO_Tiers
+    left join F_COLLABORATEUR COL on COL.CO_No = E.CO_No
+    left join F_depot on F_depot.DE_No = E.DE_No
+    where E.DO_Domaine = 0 and COL.CO_No = '$commercialRef'
+    group by E.DO_Type,E.DO_Piece,E.DO_Date,E.DO_Ref,E.DO_Tiers,C.CT_Intitule,E.CO_No,Col.CO_Nom,Col.CO_Prenom,E.DE_No,F_depot.DE_Intitule
+    order by E.DO_Piece";
+        $query = $this->_pdo->query($query);
+        $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+        return $result;
+    }
+    public function getDocumentsByCommercialByArticles($commercialRef){
+        $query = "select E.DO_Type,E.DO_Piece,E.DO_Date,E.DO_Ref Ref_Document,E.DO_Tiers,C.CT_Intitule,E.CO_No,Col.CO_Nom,Col.CO_Prenom,E.DE_No,F_depot.DE_Intitule,L.AR_Ref,DL_Design,Sum(DL_Qte) Qte,Sum(DL_PrixUnitaire) PU,Sum(DL_MontantHT) MontantHT,Sum(DL_MontantTTC) MontantTTC
+    from F_DOCLIGNE L 
+    inner join F_DOCENTETE E on L.DO_Piece = E.DO_Piece and L.DO_Domaine = E.DO_Domaine and L.DO_Type = E.DO_Type
+    inner join F_COMPTET C on C.CT_Num = E.DO_Tiers
+    left join F_COLLABORATEUR COL on COL.CO_No = E.CO_No
+    left join F_depot on F_depot.DE_No = E.DE_No
+    where E.DO_Domaine = 0 and COL.CO_No = '$commercialRef' 
+    group by E.DO_Type,E.DO_Piece,E.DO_Date,E.DO_Ref,E.DO_Tiers,C.CT_Intitule,E.CO_No,Col.CO_Nom,Col.CO_Prenom,E.DE_No,F_depot.DE_Intitule,L.AR_Ref,DL_Design
+    order by E.DO_Piece";
+        $query = $this->_pdo->query($query);
+        $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+        return $result;
+    }
+
+    public function getDocumentsByCommercialByLine($commercialRef){
+        $query = "select E.DO_Type,E.DO_Piece,E.DO_Date,E.DO_Ref Ref_Document,E.DO_Tiers,C.CT_Intitule,E.CO_No,Col.CO_Nom,Col.CO_Prenom,E.DE_No,F_depot.DE_Intitule,L.AR_Ref,DL_Design,DL_Qte,DL_PrixUnitaire,DL_MontantHT,DL_MontantTTC
+from F_DOCLIGNE L 
+inner join F_DOCENTETE E on L.DO_Piece = E.DO_Piece and L.DO_Domaine = E.DO_Domaine and L.DO_Type = E.DO_Type
+inner join F_COMPTET C on C.CT_Num = E.DO_Tiers
+left join F_COLLABORATEUR COL on COL.CO_No = E.CO_No
+left join F_depot on F_depot.DE_No = E.DE_No
+where E.DO_Domaine = 0 and COL.CO_No = '$commercialRef'
+order by E.DO_Piece";
+        $query = $this->_pdo->query($query);
+        $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+        return $result;
+    }
 }
