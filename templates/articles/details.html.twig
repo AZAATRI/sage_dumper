@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'basecommercial.html.twig' %}
 {% block stylesheets %}
     {{ parent() }}
     {{ encore_entry_link_tags('datatables') }}
@@ -9,64 +9,106 @@
 {% endblock javascripts %}
 {% block body %}
     {{ parent() }}
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Hello</h1>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header"><i class="fa fa-user-md"></i> Article {{ article.FA_Intitule }}</h3>
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="{{ path('articles_list') }}">Articles</a></li>
+                <li><i class="fa fa-user-md"></i>Article</li>
+            </ol>
         </div>
     </div>
-    <section id="tabs">
-        <div class="container">
-            <h6 class="section-title h1">Articles</h6>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-8">
-                        <nav>
-                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-details-tab" data-toggle="tab" href="#nav-details" role="tab" aria-controls="nav-details" aria-selected="true">Details</a>
-                                <a class="nav-item nav-link" id="nav-stock-tab" data-toggle="tab" href="#nav-stock" role="tab" aria-controls="nav-stock" aria-selected="false">Stock par dépots</a>
-                                <a class="nav-item nav-link" id="nav-documents-line-tab" data-toggle="tab" href="#nav-documents-line" role="tab" aria-controls="nav-documents-line" aria-selected="false">Articles par ligne de document</a>
-                            </div>
-                        </nav>
+    <div class="row">
+        <!-- profile-widget -->
+        <div class="col-lg-12">
+            <div class="profile-widget profile-widget-info">
+                <div class="panel-body">
+                    <div class="col-lg-2 col-sm-2">
+                        <h4>NOTNOTNOT</h4>
+                        <h6>Role</h6>
                     </div>
-                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-details" role="tabpanel" aria-labelledby="nav-details-tab">
-                            {{ include('articles/articleDetails.html.twig') }}
-                        </div>
-                        <div class="tab-pane fade" id="nav-stock" role="tabpanel" aria-labelledby="nav-stock-tab">
-                        </div>
-                        <div class="tab-pane fade" id="nav-documents-line" role="tabpanel" aria-labelledby="nav-documents-line-tab">
-                        </div>
+                    <div class="col-lg-4 col-sm-4 follow-info">
+                        <p>text text text</p>
+                        <h6>
+                            <span><i class="icon_clock_alt"></i>11:05 AM</span>
+                            <span><i class="icon_calendar"></i>25.10.13</span>
+                            <span><i class="icon_pin_alt"></i>NY</span>
+                        </h6>
                     </div>
-
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- page start-->
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel tabs">
+                <header class="panel-heading tab-bg-info">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a class="nav-link" data-toggle="tab" href="#nav-details">
+                                <i class="icon-home"></i>
+                                Details
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="nav-stock-tab" data-toggle="tab" href="#nav-stock">
+                                <i class="icon-user"></i>
+                                Stock par dépots
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="nav-documents-line-tab" data-toggle="tab" href="#nav-documents-line">
+                                <i class="icon-envelope"></i>
+                                Articles par ligne de document
+                            </a>
+                        </li>
+                    </ul>
+                </header>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <!-- profile -->
+                        <div id="nav-details" class="tab-pane active">
+                            {{ include('articles/articleDetails.html.twig') }}
+                        </div>
+                        <!-- edit-profile -->
+                        <div id="nav-stock" class="tab-pane">
+                        </div>
+                        <div id="nav-documents-line" class="tab-pane">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     <script>
-        var reference = '{{ article.slug }}';
-        $("#nav-stock-tab").on('click',function(event) {
-            var url = '{{ path('getarticlesbydepot',{slug : 'reference'}) }}';
-            url = url.replace('reference',reference);
-            $.ajax({
-                type: "POST",
-                url:url,
-                success: function(data) {
-                    $("#nav-stock").append(data.response);
-                }
+        $(document).ready(function () {
+            $('#articles_menu').addClass("active");
+            var reference = '{{ article.slug }}';
+            $("#nav-stock-tab").on('click',function(event) {
+                var url = '{{ path('getarticlesbydepot',{slug : 'reference'}) }}';
+                url = url.replace('reference',reference);
+                $.ajax({
+                    type: "POST",
+                    url:url,
+                    success: function(data) {
+                        $("#nav-stock").append(data.response);
+                    }
+                });
+                $(this).off('click');
             });
-            $(this).off('click');
-        });
-        $("#nav-documents-line-tab").on('click',function(event) {
-            var url = '{{ path('getlinedocumentsforcurrentarticle',{slug : 'reference'}) }}';
-            url = url.replace('reference',reference);
-            $.ajax({
-                type: "POST",
-                url:url,
-                success: function(data) {
-                    $("#nav-documents-line").append(data.response);
-                }
+            $("#nav-documents-line-tab").on('click',function(event) {
+                var url = '{{ path('getlinedocumentsforcurrentarticle',{slug : 'reference'}) }}';
+                url = url.replace('reference',reference);
+                $.ajax({
+                    type: "POST",
+                    url:url,
+                    success: function(data) {
+                        $("#nav-documents-line").append(data.response);
+                    }
+                });
+                $(this).off('click');
             });
-            $(this).off('click');
         });
     </script>
 {% endblock %}

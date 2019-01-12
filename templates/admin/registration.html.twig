@@ -26,6 +26,8 @@
 
     <script>
         $(document).ready(function() {
+            $('#registerer_menu').addClass("active");
+
             var registration_key = $('#commercial_registration_c_key');
             if(! registration_key.val()){
                 $('#commercial_details').hide();
@@ -53,6 +55,8 @@
                             $("#" + val).val(realData[i]);
                         });
                         $('#commercial_details').show();
+                        $("body").getNiceScroll().resize();
+
                     }
                 });
             });

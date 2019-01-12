@@ -12,8 +12,9 @@
 const $ = require('jquery');
 // create global $ and jQuery variables
 global.$ = global.jQuery = $;
-require('bootstrap/dist/css/bootstrap.min.css');
 require('bootstrap');
+
+require('bootstrap/dist/css/bootstrap.min.css');
 require('@fortawesome/fontawesome-free');
 require('@fortawesome/fontawesome-free/css/all.min.css');
 require('../css/app.css');

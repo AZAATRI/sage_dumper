@@ -56,7 +56,7 @@ class CommercialManagerController extends AbstractController
             $commercial->setUser($user);
             $em->persist($commercial);
             $em->flush();
-            $this->redirectToRoute('registration');
+            return $this->redirectToRoute('commercials_list');
         }
         return $this->render('admin/registration.html.twig',array('form'=>$form->createView()));
     }

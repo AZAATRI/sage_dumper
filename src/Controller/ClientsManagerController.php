@@ -42,6 +42,7 @@ class ClientsManagerController extends BaseCommercialController
                 'documents'=>$documents
             ))->getContent();
             $jsonResponse['response'] = $response;
+            $jsonResponse['code'] = 200;
         }
         return new JsonResponse($jsonResponse);
     }
@@ -58,6 +59,7 @@ class ClientsManagerController extends BaseCommercialController
                 'documentsByArticles'=>$documentsByArticles
             ))->getContent();
             $jsonResponse['response'] = $response;
+            $jsonResponse['code'] = 200;
         }
         return new JsonResponse($jsonResponse);
     }
@@ -66,7 +68,7 @@ class ClientsManagerController extends BaseCommercialController
      */
     public function clientLineDocuments($id,Request $request,SqlServerManager $sqlServerManager) : Response
     {
-        $jsonResponse = array('code' => 500,'error' => 'Erreur 500');
+        $jsonResponse = array('code' => 500);
         if($request->isXmlHttpRequest()){
             $lineDocuments = $sqlServerManager->getDocumentsByClientByLine($id);
             $lineDocuments = $this->addStockValueColumn($sqlServerManager,$lineDocuments);
@@ -74,6 +76,7 @@ class ClientsManagerController extends BaseCommercialController
                 'lines'=>$lineDocuments
             ))->getContent();
             $jsonResponse['response'] = $response;
+            $jsonResponse['code'] = 200;
         }
         return new JsonResponse($jsonResponse);
     }

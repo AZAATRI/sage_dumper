@@ -52,7 +52,7 @@ class SecurityController extends AbstractController
                 $route = 'commercials_list';
                 break;
             case 'ROLE_COMMERCIAL':
-                $route = 'commercial_index';
+                $route = 'clients_list';
                 break;
             default:
                 $route = 'login';
@@ -79,7 +79,7 @@ class SecurityController extends AbstractController
                 $em->persist($user);
                 $em->flush();
                 $this->addFlash('notice', 'Votre mot de passe à bien été changé !');
-                return $this->redirectToRoute('commercials_list');
+                return $this->redirectToRoute('success_login');
             }
         }
 

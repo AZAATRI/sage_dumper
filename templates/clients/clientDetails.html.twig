@@ -1,107 +1,47 @@
-<div class="container">
-    <table>
-        <tr>
-            <td>
-                <strong>Code client: </strong>
-            </td>
-            <td>{{ client.Code_Client }}</td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Intitulé: </strong>
-            </td>
-            <td>
-                {{ client.CT_Intitule }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Contact: </strong>
-            </td>
-            <td>
-                {{ client.CT_Contact }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Adresse: </strong>
-            </td>
-            <td>
-                {{ client.CT_Adresse }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Complement adresse: </strong>
-            </td>
-            <td>
-                {{ client.CT_Complement }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Code postal: </strong>
-            </td>
-            <td>
-                {{ client.CT_CodePostal }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Ville: </strong>
-            </td>
-            <td>
-                {{ client.CT_Ville }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Code Région: </strong>
-            </td>
-            <td>
-                {{ client.CT_CodeRegion }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Pays: </strong>
-            </td>
-            <td>
-                {{ client.CT_Pays }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Identifiant: </strong>
-            </td>
-            <td>
-                {{ client.CT_Identifiant }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Télephone: </strong>
-            </td>
-            <td>
-                {{ client.CT_Telephone }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Télecopie: </strong>
-            </td>
-            <td>
-                {{ client.CT_Telecopie }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Email: </strong>
-            </td>
-            <td>
-                {{ client.CT_EMail }}
-            </td>
-        </tr>
-    </table>
+<section class="panel">
+    <div class="panel-body bio-graph-info">
+        <h1>Détails Client</h1>
+        <div class="row">
+            <div class="bio-row">
+                <p><span><strong>Code client </strong></span>: {{ client.Code_Client }} </p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Intitulé </strong></span>: {{ client.CT_Intitule }}</p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Contact: </strong></span>: {{ client.CT_Contact }}</p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Adresse </strong></span>: {{ client.CT_Adresse }} </p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Code postal </strong></span>: {{ client.CT_CodePostal }}</p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Ville </strong></span>: {{ client.CT_Ville }}</p>
+            </div>
 
-</div>
+            <div class="bio-row">
+                <p><span><strong>Code Région </strong></span>: {{ client.CT_CodeRegion }} </p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Pays </strong></span>: {{ client.CT_Pays }}</p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Identifiant: </strong></span>: {{ client.CT_Identifiant }}</p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Télephone </strong></span>: {{ client.CT_Telephone }} </p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Télecopie </strong></span>: {{ client.CT_Telecopie }}</p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Email </strong></span>: {{ client.CT_EMail }}</p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>En cours </strong></span>: {{ client.CT_Encours|number_format(3) }}</p>
+            </div>
+        </div>
+    </div>
+</section>

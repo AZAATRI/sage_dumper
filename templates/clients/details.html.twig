@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'basecommercial.html.twig' %}
 {% block stylesheets %}
     {{ parent() }}
     {{ encore_entry_link_tags('datatables') }}
@@ -9,79 +9,127 @@
 {% endblock javascripts %}
 {% block body %}
     {{ parent() }}
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Hello</h1>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header"><i class="fa fa-user-md"></i> Client {{ client.CT_Intitule }}</h3>
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="{{ path('clients_list') }}">Clients</a></li>
+                <li><i class="fa fa-user-md"></i>Client</li>
+            </ol>
         </div>
     </div>
-    <section id="tabs">
-        <div class="container">
-            <h6 class="section-title h1">Client</h6>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-8">
-                        <nav>
-                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link active" id="nav-details-tab" data-toggle="tab" href="#nav-details" role="tab" aria-controls="nav-details" aria-selected="true">Details</a>
-                                <a class="nav-item nav-link" id="nav-documents-tab" data-toggle="tab" href="#nav-documents" role="tab" aria-controls="nav-documents" aria-selected="false">Vente documents</a>
-                                <a class="nav-item nav-link" id="nav-documents-article-tab" data-toggle="tab" href="#nav-documents-article" role="tab" aria-controls="nav-documents-article" aria-selected="false">Vente documents par article</a>
-                                <a class="nav-item nav-link" id="nav-documents-line-tab" data-toggle="tab" href="#nav-documents-line" role="tab" aria-controls="nav-documents-line" aria-selected="false">Vente ligne de documents</a>
-                            </div>
-                        </nav>
+    <div class="row">
+        <!-- profile-widget -->
+        <div class="col-lg-12">
+            <div class="profile-widget profile-widget-info">
+                <div class="panel-body">
+                    <div class="col-lg-2 col-sm-2">
+                        <h4>NOTNOTNOT</h4>
+                        <h6>Role</h6>
                     </div>
-                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                        <div class="tab-pane fade show active" id="nav-details" role="tabpanel" aria-labelledby="nav-details-tab">
-                            {{ include('clients/clientDetails.html.twig') }}
-                        </div>
-                        <div class="tab-pane fade" id="nav-documents" role="tabpanel" aria-labelledby="nav-documents-tab">
-                        </div>
-                        <div class="tab-pane fade" id="nav-documents-article" role="tabpanel" aria-labelledby="nav-documents-article-tab">
-                        </div>
-                        <div class="tab-pane fade" id="nav-documents-line" role="tabpanel" aria-labelledby="nav-documents-line-tab">
-                        </div>
+                    <div class="col-lg-4 col-sm-4 follow-info">
+                        <p>text text text</p>
+                        <h6>
+                            <span><i class="icon_clock_alt"></i>11:05 AM</span>
+                            <span><i class="icon_calendar"></i>25.10.13</span>
+                            <span><i class="icon_pin_alt"></i>NY</span>
+                        </h6>
                     </div>
-
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- page start-->
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="panel tabs">
+                <header class="panel-heading tab-bg-info">
+                    <ul class="nav nav-tabs">
+                        <li class="active">
+                            <a class="nav-link" data-toggle="tab" href="#client_data">
+                                <i class="icon-home"></i>
+                                Details
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="nav-documents-tab" data-toggle="tab" href="#nav-documents">
+                                <i class="icon-user"></i>
+                                Vente documents
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="nav-documents-article-tab" data-toggle="tab" href="#nav-documents-article">
+                                <i class="icon-envelope"></i>
+                                Vente documents par article
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="nav-documents-line-tab" data-toggle="tab" href="#nav-documents-line">
+                                <i class="icon-envelope"></i>
+                                Vente ligne de documents
+                            </a>
+                        </li>
+                    </ul>
+                </header>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <!-- profile -->
+                        <div id="client_data" class="tab-pane active">
+                            {{ include('clients/clientDetails.html.twig') }}
+                        </div>
+                        <!-- edit-profile -->
+                        <div id="nav-documents" class="tab-pane">
+                        </div>
+                        <div id="nav-documents-article" class="tab-pane">
+                        </div>
+                        <div id="nav-documents-line" class="tab-pane">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     <script>
-        var clientId = '{{ client.Code_Client }}';
-        $("#nav-documents-tab").on('click',function(event) {
-            var url = '{{ path('getdocumentsforcurrentclient',{id : 'clientId'}) }}';
-            url = url.replace('clientId',clientId);
-            $.ajax({
-                type: "POST",
-                url:url,
-                success: function(data) {
-                    $("#nav-documents").append(data.response);
-                }
+        $(document).ready(function () {
+            $('#clients_menu').addClass("active");
+            var clientId = '{{ client.Code_Client }}';
+
+            $("#nav-documents-tab").on('click',function(event) {
+                var url = '{{ path('getdocumentsforcurrentclient',{id : 'clientId'}) }}';
+                url = url.replace('clientId',clientId);
+                $.ajax({
+                    type: "POST",
+                    url:url,
+                    success: function(data) {
+                        $("#nav-documents").append(data.response);
+                    }
+                });
+                $(this).off('click');
             });
-            $(this).off('click');
-        });
-        $("#nav-documents-article-tab").on('click',function(event) {
-            var url = '{{ path('getdocumentsforcurrentclientbyarticles',{id : 'clientId'}) }}';
-            url = url.replace('clientId',clientId);
-            $.ajax({
-                type: "POST",
-                url:url,
-                success: function(data) {
-                    $("#nav-documents-article").append(data.response);
-                }
+            $("#nav-documents-article-tab").on('click',function(event) {
+                var url = '{{ path('getdocumentsforcurrentclientbyarticles',{id : 'clientId'}) }}';
+                url = url.replace('clientId',clientId);
+                $.ajax({
+                    type: "POST",
+                    url:url,
+                    success: function(data) {
+                        $("#nav-documents-article").append(data.response);
+                    }
+                });
+                $(this).off('click');
             });
-            $(this).off('click');
-        });
-        $("#nav-documents-line-tab").on('click',function(event) {
-            var url = '{{ path('getlinedocumentsforcurrentclient',{id : 'clientId'}) }}';
-            url = url.replace('clientId',clientId);
-            $.ajax({
-                type: "POST",
-                url:url,
-                success: function(data) {
-                    $("#nav-documents-line").append(data.response);
-                }
+            $("#nav-documents-line-tab").on('click',function(event) {
+                var url = '{{ path('getlinedocumentsforcurrentclient',{id : 'clientId'}) }}';
+                url = url.replace('clientId',clientId);
+                $.ajax({
+                    type: "POST",
+                    url:url,
+                    success: function(data) {
+                        $("#nav-documents-line").append(data.response);
+                    }
+                });
+                $(this).off('click');
             });
-            $(this).off('click');
         });
     </script>
 {% endblock %}

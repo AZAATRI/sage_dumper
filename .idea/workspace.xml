@@ -3,8 +3,26 @@
   <component name="ChangeListManager">
     <list default="true" id="341e6377-6567-4ba9-8f6d-4141c4bbfbef" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/DocumentsManagerController.php" afterPath="$PROJECT_DIR$/src/Controller/DocumentsManagerController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/articles/articleLineDocuments.html.twig" afterPath="$PROJECT_DIR$/templates/articles/articleLineDocuments.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/app.css" afterPath="$PROJECT_DIR$/assets/css/app.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/app.js" afterPath="$PROJECT_DIR$/assets/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/packages/security.yaml" afterPath="$PROJECT_DIR$/config/packages/security.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/ClientsManagerController.php" afterPath="$PROJECT_DIR$/src/Controller/ClientsManagerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/CommercialManagerController.php" afterPath="$PROJECT_DIR$/src/Controller/CommercialManagerController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/baseadmin.html.twig" afterPath="$PROJECT_DIR$/templates/admin/baseadmin.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/admin/registration.html.twig" afterPath="$PROJECT_DIR$/templates/admin/registration.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/articles/articleDetails.html.twig" afterPath="$PROJECT_DIR$/templates/articles/articleDetails.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/articles/details.html.twig" afterPath="$PROJECT_DIR$/templates/articles/details.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/articles/list.html.twig" afterPath="$PROJECT_DIR$/templates/articles/list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/base.html.twig" afterPath="$PROJECT_DIR$/templates/base.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/clientDetails.html.twig" afterPath="$PROJECT_DIR$/templates/clients/clientDetails.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/clients.html.twig" afterPath="$PROJECT_DIR$/templates/clients/clients.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/clients/details.html.twig" afterPath="$PROJECT_DIR$/templates/clients/details.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/commercial_manager/list.html.twig" afterPath="$PROJECT_DIR$/templates/commercial_manager/list.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/documents/details.html.twig" afterPath="$PROJECT_DIR$/templates/documents/details.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/security/login.html.twig" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/webpack.config.js" afterPath="$PROJECT_DIR$/webpack.config.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,118 +34,101 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="ClientsManagerController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/ClientsManagerController.php">
+      <file leaf-file-name="registration.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin/registration.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="726">
-              <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-              <folding>
-                <element signature="e#34#67#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="commercialDocuments.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/documents/commercialDocuments.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="627">
-              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="61" />
+            <state relative-caret-position="1881">
+              <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commercialDocumentsByArticles.html.twig" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/documents/commercialDocumentsByArticles.html.twig">
+      <file leaf-file-name="list.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/articles/list.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1288">
-              <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+            <state relative-caret-position="386">
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="commercialLineDocuments.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/documents/commercialLineDocuments.html.twig">
+      <file leaf-file-name=".env" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articlesDepot.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/articles/articlesDepot.html.twig">
+      <file leaf-file-name="symfony.lock" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/symfony.lock">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1023">
-              <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="articleLineDocuments.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/articles/articleLineDocuments.html.twig">
+      <file leaf-file-name="composer.lock" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.lock">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SqlServerManager.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Service/SqlServerManager.php">
+      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/composer.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5412">
-              <caret line="169" column="57" lean-forward="false" selection-start-line="169" selection-start-column="57" selection-end-line="169" selection-end-column="57" />
-              <folding>
-                <element signature="e#6#87#0#PHP" expanded="true" />
-                <marker date="1545099363148" expanded="true" signature="645:838" ph="select CO_No... F_COLLABORATEUR" />
-                <marker date="1545099363148" expanded="true" signature="1119:1419" ph="select CO_No... F_COLLABORATEUR" />
-                <marker date="1545099363148" expanded="true" signature="1119:1456" ph="Select CT_Nu... F_COMPTET" />
-                <marker date="1545099363148" expanded="true" signature="1119:1586" ph="Select CT_Nu... F_COMPTET" />
-                <marker date="1545099363148" expanded="true" signature="1686:2043" ph="select CT_Nu... F_COMPTET" />
-                <marker date="1545099363148" expanded="true" signature="1686:2044" ph="select CT_Nu... F_COMPTET" />
-                <marker date="1545099363148" expanded="true" signature="1686:2055" ph="select CT_Nu... F_COMPTET" />
-                <marker date="1545099363148" expanded="true" signature="2261:2980" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545099363148" expanded="true" signature="2261:2981" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545099363148" expanded="true" signature="3194:3983" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545099363148" expanded="true" signature="4189:4744" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545099363148" expanded="true" signature="4966:5562" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545099363148" expanded="true" signature="5749:5918" ph="select A.AR_... F_ARTICLE" />
-                <marker date="1545099363148" expanded="true" signature="6140:6344" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545099363148" expanded="true" signature="6534:6727" ph="select A.AR_... F_ARTICLE" />
-                <marker date="1545099363148" expanded="true" signature="6920:7194" ph="Select AR_Re... F_ARTSTOCK" />
-                <marker date="1545099363148" expanded="true" signature="7407:8168" ph="Select AR_Re... F_ARTSTOCK" />
-                <marker date="1545099363148" expanded="true" signature="8391:9191" ph="select E.DO_... F_DOCLIGNE" />
-                <marker date="1545099363148" expanded="true" signature="9411:9976" ph="select E.DO_... F_DOCLIGNE" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="details.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/documents/details.html.twig">
+      <file leaf-file-name="webpack.config.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1419">
-              <caret line="43" column="12" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-              <folding>
-                <element signature="e#2414#2446#0#Twig" expanded="true" />
-                <element signature="e#2860#2902#0#Twig" expanded="true" />
-                <element signature="e#3321#3357#0#Twig" expanded="true" />
-              </folding>
+            <state relative-caret-position="792">
+              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="DocumentsManagerController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Controller/DocumentsManagerController.php">
+      <file leaf-file-name="list.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/commercial_manager/list.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+            <state relative-caret-position="2475">
+              <caret line="75" column="10" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="app.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/css/app.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="baseadmin.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin/baseadmin.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="99">
+              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -137,36 +138,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>r</find>
-      <find>getCo</find>
-      <find>sqlsrv</find>
-      <find>pdo_sqlsrv</find>
-      <find>init</find>
-      <find>fet</find>
-      <find>fe</find>
-      <find>eCoreTemplatePath</find>
-      <find>css</find>
-      <find>getrole</find>
-      <find>commercial</find>
-      <find>s</find>
-      <find>serv</find>
-      <find>$fetch_style</find>
-      <find>User</find>
-      <find>commer</find>
-      <find>R</find>
-      <find>tr&gt;</find>
-      <find>data-targ</find>
-      <find>path</find>
-      <find>Reference</find>
-      <find>crist</find>
-      <find>div class=&quot;row&quot;</find>
-      <find>class=&quot;col-md-10&quot;</find>
-      <find>class=&quot;col-md-2&quot;</find>
-      <find>:&lt;/strong&gt;</find>
-      <find>F_DOCLIGNE</find>
       <find>about</find>
       <find>getCommer</find>
+      <find>.jpg</find>
+      <find>-small.jpg</find>
+      <find>check-off</find>
+      <find>.png</find>
+      <find>bg-11</find>
+      <find>../img</find>
+      <find>task_notificatoin_bar</find>
+      <find>h</find>
+      <find>header.</find>
+      <find>header</find>
+      <find>font-size: 14px;</find>
+      <find>icon_clie</find>
+      <find>icon_group</find>
+      <find>delete_commercial</find>
+      <find>daily ac</find>
+      <find>col-lg-2 col-sm-6 follow-info weather-category</find>
+      <find>CLIENT</find>
       <find>client</find>
+      <find>sidebar-menu</find>
+      <find>sidebar</find>
+      <find>active</find>
+      <find>modal</find>
+      <find>them</find>
+      <find>scro</find>
+      <find>scroll</find>
+      <find>s</find>
+      <find>hea</find>
+      <find>nicesc</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -177,6 +178,7 @@
       <replace>documents-line</replace>
       <replace>article</replace>
       <replace>commercial</replace>
+      <replace>modalf</replace>
     </replaceStrings>
     <dirStrings>
       <dir>C:\wamp64\www\ciel_dumper\templates</dir>
@@ -188,57 +190,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/admin/baseadmin.html.twig" />
-        <option value="$PROJECT_DIR$/templates/admin/index.html.twig" />
-        <option value="$PROJECT_DIR$/config/services.yaml" />
-        <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
-        <option value="$PROJECT_DIR$/src/Entity/User.php" />
-        <option value="$PROJECT_DIR$/templates/datatablescss.html.twig" />
-        <option value="$PROJECT_DIR$/templates/datatables.html.twig" />
-        <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/public/build/manifest.json" />
-        <option value="$PROJECT_DIR$/assets/js/datatables.js" />
-        <option value="$PROJECT_DIR$/src/Form/RegistrationType.php" />
-        <option value="$PROJECT_DIR$/src/FormEntities/Commercial.php" />
-        <option value="$PROJECT_DIR$/src/Form/CommercialRegistrationType.php" />
-        <option value="$PROJECT_DIR$/src/Controller/AdminController.php" />
-        <option value="$PROJECT_DIR$/src/Form/CommercialEditType.php" />
-        <option value="$PROJECT_DIR$/src/Entity/Commercial.php" />
-        <option value="$PROJECT_DIR$/src/Controller/CommercialManagerController.php" />
-        <option value="$PROJECT_DIR$/src/FormEntities/CommercialFormEntity.php" />
-        <option value="$PROJECT_DIR$/src/TwigExtension/PasswordExtention.php" />
         <option value="$PROJECT_DIR$/src/Twig/PasswordExtention.php" />
-        <option value="$PROJECT_DIR$/templates/commercial_manager/list.html.twig" />
-        <option value="$PROJECT_DIR$/templates/admin/registration.html.twig" />
-        <option value="$PROJECT_DIR$/templates/base.html.twig" />
         <option value="$PROJECT_DIR$/templates/security/resetpassword.html.twig" />
         <option value="$PROJECT_DIR$/src/Form/ResetPasswordType.php" />
-        <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
         <option value="$PROJECT_DIR$/templates/commercial_manager/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/ClientsManager.php" />
         <option value="$PROJECT_DIR$/src/Controller/BaseCommercialController.php" />
-        <option value="$PROJECT_DIR$/templates/clients/clientDetails.html.twig" />
-        <option value="$PROJECT_DIR$/assets/js/app.js" />
         <option value="$PROJECT_DIR$/templates/clients/clientLineDocuments.html.twig" />
         <option value="$PROJECT_DIR$/templates/clients/clientDocuments.html.twig" />
         <option value="$PROJECT_DIR$/templates/clients/clientDocumentsByArticles.html.twig" />
-        <option value="$PROJECT_DIR$/src/Controller/ClientsManagerController.php" />
-        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
-        <option value="$PROJECT_DIR$/templates/clients/details.html.twig" />
-        <option value="$PROJECT_DIR$/assets/css/app.css" />
-        <option value="$PROJECT_DIR$/templates/clients/clients.html.twig" />
-        <option value="$PROJECT_DIR$/templates/articles/list.html.twig" />
-        <option value="$PROJECT_DIR$/templates/articles/articleDetails.html.twig" />
         <option value="$PROJECT_DIR$/templates/articles/articlesDepot.html.twig" />
-        <option value="$PROJECT_DIR$/templates/articles/details.html.twig" />
         <option value="$PROJECT_DIR$/src/Controller/ArticlesManagerController.php" />
         <option value="$PROJECT_DIR$/src/Service/SqlServerManager.php" />
         <option value="$PROJECT_DIR$/src/Controller/DocumentsManagerController.php" />
-        <option value="$PROJECT_DIR$/templates/documents/details.html.twig" />
         <option value="$PROJECT_DIR$/templates/articles/articleLineDocuments.html.twig" />
         <option value="$PROJECT_DIR$/templates/documents/commercialDocuments.html.twig" />
         <option value="$PROJECT_DIR$/templates/documents/commercialLineDocuments.html.twig" />
         <option value="$PROJECT_DIR$/templates/documents/commercialDocumentsByArticles.html.twig" />
+        <option value="$PROJECT_DIR$/src/Validator/Constraint/UniqueUserConstraint.php" />
+        <option value="$PROJECT_DIR$/src/Validator/UniqueFieldValidator.php" />
+        <option value="$PROJECT_DIR$/src/Controller/AdminController.php" />
+        <option value="$PROJECT_DIR$/webpack.config.js" />
+        <option value="$PROJECT_DIR$/assets/css/bootstrap-theme.css" />
+        <option value="$PROJECT_DIR$/templates/left_menu.html.twig" />
+        <option value="$PROJECT_DIR$/templates/admin/baseadmin.html.twig" />
+        <option value="$PROJECT_DIR$/templates/basecomemrcial.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/ClientsManagerController.php" />
+        <option value="$USER_HOME$/Desktop/NiceAdmin/profile.html" />
+        <option value="$PROJECT_DIR$/templates/clients/clientDetails.html.twig" />
+        <option value="$PROJECT_DIR$/templates/clients/details2.html.twig" />
+        <option value="$PROJECT_DIR$/templates/articles/articleDetails.html.twig" />
+        <option value="$PROJECT_DIR$/src/Controller/CommercialManagerController.php" />
+        <option value="$PROJECT_DIR$/src/Controller/SecurityController.php" />
+        <option value="$PROJECT_DIR$/assets/js/app.js" />
+        <option value="$PROJECT_DIR$/templates/header.html.twig" />
+        <option value="$PROJECT_DIR$/templates/commercial_left_menu.html.twig" />
+        <option value="$PROJECT_DIR$/templates/clients/details.html.twig" />
+        <option value="$PROJECT_DIR$/templates/articles/details.html.twig" />
+        <option value="$PROJECT_DIR$/templates/documents/details.html.twig" />
+        <option value="$PROJECT_DIR$/templates/admin_left_menu.html.twig" />
+        <option value="$PROJECT_DIR$/assets/css/style.css" />
+        <option value="$PROJECT_DIR$/templates/base.html.twig" />
+        <option value="$PROJECT_DIR$/templates/commercial_manager/list.html.twig" />
+        <option value="$PROJECT_DIR$/config/packages/security.yaml" />
+        <option value="$PROJECT_DIR$/templates/security/login.html.twig" />
+        <option value="$PROJECT_DIR$/templates/admin/registration.html.twig" />
+        <option value="$PROJECT_DIR$/assets/js/header.js" />
+        <option value="$PROJECT_DIR$/assets/js/scripts.js" />
+        <option value="$PROJECT_DIR$/assets/css/app.css" />
+        <option value="$PROJECT_DIR$/assets/js/datatables.js" />
+        <option value="$PROJECT_DIR$/templates/clients/clients.html.twig" />
+        <option value="$PROJECT_DIR$/templates/articles/list.html.twig" />
       </list>
     </option>
   </component>
@@ -329,7 +331,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -342,212 +343,9 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="documents" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="clients" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="articles" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Twig" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Service" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ciel_dumper" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -555,21 +353,21 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SF4Test" />
-    <property name="SearchEverywhereHistoryKey" value="app.css&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/assets/css/app.css&#10;security&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/config/packages/security.yaml&#10;security.ya&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/config/packages/security.yaml&#10;base&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/templates/base.html.twig&#10;Commercia&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Entity/Commercial.php&#10;app.js&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/assets/js/app.js&#10;En&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/public/build/entrypoints.json&#10;Registrat&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Form/CommercialRegistrationType.php&#10;Registratio&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Form/CommercialRegistrationType.php&#10;commer&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Entity/Commercial.php&#10;CommercialR&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Form/CommercialRegistrationType.php&#10;Commer&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Entity/Commercial.php&#10;securityC&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Controller/SecurityController.php&#10;Commercial&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Entity/Commercial.php&#10;services&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/config/services.yaml&#10;User&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Entity/User.php&#10;testController&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Controller/TestController.php&#10;testCon&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Controller/TestController.php&#10;routes&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/config/routes.yaml" />
+    <property name="SearchEverywhereHistoryKey" value="app.css&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/assets/css/app.css&#10;app.Css&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/assets/css/app.css&#10;clients&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/templates/clients/clients.html.twig&#10;widgets.css&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/assets/css/widgets.css&#10;header&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/assets/js/header.js&#10;style&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/assets/css/style-responsive.css&#10;style.css&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/assets/css/style.css&#10;regis&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/templates/admin/registration.html.twig&#10;login&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/templates/security/login.html.twig&#10;security.y&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/config/packages/security.yaml&#10;header.&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/templates/header.html.twig&#10;header.js&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/assets/js/header.js&#10;head&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/templates/header.html.twig&#10;packa&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/package.json&#10;icon&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/assets/css/elegant-icons-style.css&#10;base&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/templates/base.html.twig&#10;commerci&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Controller/CommercialManagerController.php&#10;datata&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/assets/js/datatables.js&#10;Unique&#9;null&#9;null&#10;security&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/config/packages/security.yaml&#10;security.ya&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/config/packages/security.yaml&#10;Commercia&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Entity/Commercial.php&#10;app.js&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/assets/js/app.js&#10;En&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/public/build/entrypoints.json&#10;Registrat&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Form/CommercialRegistrationType.php&#10;Registratio&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Form/CommercialRegistrationType.php&#10;commer&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Entity/Commercial.php&#10;CommercialR&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Form/CommercialRegistrationType.php&#10;Commer&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Entity/Commercial.php&#10;securityC&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Controller/SecurityController.php&#10;Commercial&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Entity/Commercial.php&#10;services&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/config/services.yaml&#10;User&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Entity/User.php&#10;testController&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Controller/TestController.php&#10;testCon&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/src/Controller/TestController.php&#10;routes&#9;FILE&#9;file://C:/wamp64/www/ciel_dumper/config/routes.yaml" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="nodejs_interpreter_path" value="C:/Program Files/nodejs/node" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\wamp64\www\ciel_dumper\templates\clients" />
+      <recent name="C:\wamp64\www\ciel_dumper\templates\admin" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\wamp64\www\ciel_dumper\templates\documents" />
       <recent name="C:\wamp64\www\ciel_dumper\templates\articles" />
       <recent name="C:\wamp64\www\ciel_dumper\templates\clients" />
-      <recent name="C:\wamp64\www\ciel_dumper\src\Controller" />
-      <recent name="C:\wamp64\www\ciel_dumper\templates\commercial" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\wamp64\www\ciel_dumper\templates\clients" />
-      <recent name="C:\wamp64\www\ciel_dumper\templates\admin" />
+      <recent name="C:\wamp64\www\ciel_dumper\templates" />
+      <recent name="C:\wamp64\www\ciel_dumper\assets\js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -679,17 +477,24 @@
       <workItem from="1544954871360" duration="34565000" />
       <workItem from="1545045200870" duration="32173000" />
       <workItem from="1545142666558" duration="1773000" />
+      <workItem from="1545167516250" duration="1981000" />
+      <workItem from="1545260635337" duration="2625000" />
+      <workItem from="1545865910190" duration="5933000" />
+      <workItem from="1545936585629" duration="19607000" />
+      <workItem from="1546019368428" duration="616000" />
+      <workItem from="1546254349349" duration="5192000" />
+      <workItem from="1546729885515" duration="2993000" />
+      <workItem from="1546893514066" duration="16000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147417000" />
+    <option name="totallyTimeSpent" value="186380000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="7667" y="-13" width="3710" height="2018" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26058632" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27117264" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -721,409 +526,372 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/form/AbstractType.php">
+    <entry file="file://$PROJECT_DIR$/assets/js/xcharts.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="892">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/User.php">
+    <entry file="file://$PROJECT_DIR$/public/build/entrypoints.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="36" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/validator/Constraints/Length.php">
+    <entry file="file://$PROJECT_DIR$/public/build/manifest.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/CommercialEditType.php" />
-    <entry file="file://$PROJECT_DIR$/src/TwigExtension/PasswordExtension" />
-    <entry file="file://$PROJECT_DIR$/config/services.yaml">
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-theme.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="1004">
+          <caret line="2155" column="0" lean-forward="false" selection-start-line="2155" selection-start-column="0" selection-end-line="2155" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FormEntities/CommercialFormEntity.php">
+    <entry file="file://$PROJECT_DIR$/assets/css/elegant-icons-style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="905">
-          <caret line="102" column="47" lean-forward="false" selection-start-line="102" selection-start-column="47" selection-end-line="102" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Entity/Commercial.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="37" column="7" lean-forward="false" selection-start-line="37" selection-start-column="7" selection-end-line="37" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="23" column="99" lean-forward="false" selection-start-line="23" selection-start-column="99" selection-end-line="23" selection-end-column="99" />
-          <folding>
-            <element signature="e#1142#1148#0#Twig" expanded="true" />
-            <element signature="e#1315#1321#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/CommercialRegistrationType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="103" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/RegistrationType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/security/Core/Encoder/UserPasswordEncoderInterface.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="20" column="10" lean-forward="false" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/framework-bundle/Controller/ControllerTrait.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="313" column="23" lean-forward="false" selection-start-line="313" selection-start-column="23" selection-end-line="313" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/symfony/security/Http/Authentication/AuthenticationUtils.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/security/resetpassword.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="28" lean-forward="false" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Form/ResetPasswordType.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="22" column="24" lean-forward="false" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
-          <caret line="58" column="9" lean-forward="false" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
-          <folding>
-            <element signature="e#892#907#1#PHP" expanded="false" />
-            <element signature="e#2958#2976#1#PHP" expanded="false" />
-            <element signature="e#3033#3067#0#PHP" expanded="false" />
-          </folding>
+        <state relative-caret-position="-539">
+          <caret line="739" column="11" lean-forward="false" selection-start-line="739" selection-start-column="1" selection-end-line="739" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/AdminController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="825">
-          <caret line="33" column="0" lean-forward="false" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="759">
+          <caret line="31" column="20" lean-forward="false" selection-start-line="31" selection-start-column="20" selection-end-line="31" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/CommercialController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/webpack-encore-bundle/src/Twig/EntryFilesTwigExtension.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="14" column="30" lean-forward="false" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-          <folding />
+        <state relative-caret-position="927">
+          <caret line="48" column="20" lean-forward="false" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/CommercialManagerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/commercial_manager/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/BaseCommercialController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/datatables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="18" column="19" lean-forward="false" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/clientDocuments.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="7" column="21" lean-forward="false" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/clientDocumentsByArticles.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="36" column="22" lean-forward="false" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1419">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/clientDetails.html.twig">
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="957">
-          <caret line="29" column="32" lean-forward="false" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
+          <caret line="29" column="29" lean-forward="false" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/registration.html.twig">
+    <entry file="file://$USER_HOME$/Desktop/NiceAdmin/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-296">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="996">
+          <caret line="365" column="0" lean-forward="false" selection-start-line="365" selection-start-column="0" selection-end-line="365" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/commercial_manager/list.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/basecommercial.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="938">
-          <caret line="79" column="40" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
+        <state relative-caret-position="99">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/commercial/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/baseadmin.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/admin/index.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="41" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/clientLineDocuments.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="8" column="28" lean-forward="false" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assets/css/app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/details.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="35" column="122" lean-forward="false" selection-start-line="35" selection-start-column="122" selection-end-line="35" selection-end-column="122" />
-          <folding>
-            <element signature="e#2801#2829#0#Twig" expanded="true" />
-            <element signature="e#3269#3307#0#Twig" expanded="true" />
-            <element signature="e#3752#3784#0#Twig" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Twig/PasswordExtention.php">
+    <entry file="file://$PROJECT_DIR$/templates/clients/details2.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
-          <caret line="19" column="76" lean-forward="false" selection-start-line="19" selection-start-column="76" selection-end-line="19" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/clients/clients.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1321">
-          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="45" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/articles/articleDetails.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/articles/list.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ArticlesManagerController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1046">
-          <caret line="82" column="68" lean-forward="false" selection-start-line="82" selection-start-column="68" selection-end-line="82" selection-end-column="68" />
-          <folding>
-            <element signature="e#1002#1027#0#PHP" expanded="false" />
-            <element signature="e#1422#1450#0#PHP" expanded="false" />
-            <element signature="e#2577#2611#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/articles/details.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="848">
-          <caret line="51" column="24" lean-forward="false" selection-start-line="51" selection-start-column="24" selection-end-line="51" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Service/SqlServerManager.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5412">
-          <caret line="169" column="57" lean-forward="false" selection-start-line="169" selection-start-column="57" selection-end-line="169" selection-end-column="57" />
-          <folding>
-            <element signature="e#6#87#0#PHP" expanded="true" />
-            <marker date="1545099363148" expanded="true" signature="645:838" ph="select CO_No... F_COLLABORATEUR" />
-            <marker date="1545099363148" expanded="true" signature="1119:1419" ph="select CO_No... F_COLLABORATEUR" />
-            <marker date="1545099363148" expanded="true" signature="1119:1456" ph="Select CT_Nu... F_COMPTET" />
-            <marker date="1545099363148" expanded="true" signature="1119:1586" ph="Select CT_Nu... F_COMPTET" />
-            <marker date="1545099363148" expanded="true" signature="1686:2043" ph="select CT_Nu... F_COMPTET" />
-            <marker date="1545099363148" expanded="true" signature="1686:2044" ph="select CT_Nu... F_COMPTET" />
-            <marker date="1545099363148" expanded="true" signature="1686:2055" ph="select CT_Nu... F_COMPTET" />
-            <marker date="1545099363148" expanded="true" signature="2261:2980" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545099363148" expanded="true" signature="2261:2981" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545099363148" expanded="true" signature="3194:3983" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545099363148" expanded="true" signature="4189:4744" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545099363148" expanded="true" signature="4966:5562" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545099363148" expanded="true" signature="5749:5918" ph="select A.AR_... F_ARTICLE" />
-            <marker date="1545099363148" expanded="true" signature="6140:6344" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545099363148" expanded="true" signature="6534:6727" ph="select A.AR_... F_ARTICLE" />
-            <marker date="1545099363148" expanded="true" signature="6920:7194" ph="Select AR_Re... F_ARTSTOCK" />
-            <marker date="1545099363148" expanded="true" signature="7407:8168" ph="Select AR_Re... F_ARTSTOCK" />
-            <marker date="1545099363148" expanded="true" signature="8391:9191" ph="select E.DO_... F_DOCLIGNE" />
-            <marker date="1545099363148" expanded="true" signature="9411:9976" ph="select E.DO_... F_DOCLIGNE" />
-          </folding>
+          <caret line="13" column="47" lean-forward="false" selection-start-line="13" selection-start-column="47" selection-end-line="13" selection-end-column="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ClientsManagerController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="726">
-          <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="49" selection-end-line="33" selection-end-column="49" />
-          <folding>
-            <element signature="e#34#67#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="924">
+          <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/DocumentsManagerController.php">
+    <entry file="file://$PROJECT_DIR$/templates/articles/articleDetails.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="18" column="6" lean-forward="false" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
-          <folding />
+        <state relative-caret-position="66">
+          <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/documents/details2.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="46" column="18" lean-forward="true" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/SecurityController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1288">
+          <caret line="81" column="63" lean-forward="false" selection-start-line="81" selection-start-column="63" selection-end-line="81" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/CommercialManagerController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/clients/clientDetails.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="891">
+          <caret line="27" column="12" lean-forward="false" selection-start-line="27" selection-start-column="12" selection-end-line="27" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/header.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="363">
+          <caret line="11" column="42" lean-forward="false" selection-start-line="11" selection-start-column="42" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/clients/details.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1046">
+          <caret line="93" column="28" lean-forward="false" selection-start-line="93" selection-start-column="28" selection-end-line="93" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/documents/details.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1419">
-          <caret line="43" column="12" lean-forward="false" selection-start-line="43" selection-start-column="12" selection-end-line="43" selection-end-column="12" />
-          <folding>
-            <element signature="e#2414#2446#0#Twig" expanded="true" />
-            <element signature="e#2860#2902#0#Twig" expanded="true" />
-            <element signature="e#3321#3357#0#Twig" expanded="true" />
-          </folding>
+        <state relative-caret-position="1386">
+          <caret line="83" column="44" lean-forward="false" selection-start-line="83" selection-start-column="44" selection-end-line="83" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/articles/articleLineDocuments.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/commercial_left_menu.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="132">
+          <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/security/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/commercial_manager/edit.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="21" column="59" lean-forward="false" selection-start-line="21" selection-start-column="59" selection-end-line="21" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin_left_menu.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="36" lean-forward="false" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="957">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/articles/articlesDepot.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/articles/details2.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1023">
-          <caret line="31" column="38" lean-forward="false" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="38" />
+        <state relative-caret-position="1188">
+          <caret line="36" column="55" lean-forward="false" selection-start-line="36" selection-start-column="55" selection-end-line="36" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/articles/details.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/commercial_manager/index.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/bootstrap-colorpicker.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="33">
+          <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="16" selection-end-line="34" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/var/cache/dev/srcApp_KernelDevDebugContainer.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="587">
+          <caret line="70" column="4" lean-forward="false" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/security/login.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="957">
+          <caret line="29" column="61" lean-forward="false" selection-start-line="29" selection-start-column="61" selection-end-line="29" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/packages/security.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="17" column="24" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style-responsive.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="649">
+          <caret line="36" column="11" lean-forward="false" selection-start-line="36" selection-start-column="11" selection-end-line="36" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/widgets.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-390">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="429">
+          <caret line="18" column="18" lean-forward="false" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/scripts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="26" column="57" lean-forward="true" selection-start-line="26" selection-start-column="57" selection-end-line="26" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1607">
+          <caret line="9854" column="0" lean-forward="true" selection-start-line="9854" selection-start-column="0" selection-end-line="9854" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="29" lean-forward="false" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/datatables.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="5" column="3" lean-forward="false" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/clients/clients.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1683">
+          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="55" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documents/commercialDocuments.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/admin/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="20" selection-end-column="61" />
+        <state relative-caret-position="363">
+          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documents/commercialLineDocuments.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/admin/baseadmin.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="5" column="24" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+        <state relative-caret-position="99">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/documents/commercialDocumentsByArticles.html.twig">
+    <entry file="file://$PROJECT_DIR$/templates/admin/registration.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1288">
-          <caret line="40" column="28" lean-forward="false" selection-start-line="40" selection-start-column="28" selection-end-line="40" selection-end-column="28" />
+        <state relative-caret-position="1881">
+          <caret line="57" column="31" lean-forward="false" selection-start-line="57" selection-start-column="31" selection-end-line="57" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/commercial_manager/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="75" column="10" lean-forward="false" selection-start-line="75" selection-start-column="10" selection-end-line="75" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/css/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="99">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/articles/list.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="386">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/symfony.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.lock">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>

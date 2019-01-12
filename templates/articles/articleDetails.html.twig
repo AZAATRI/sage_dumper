@@ -1,59 +1,29 @@
-<div class="container">
-    <table>
-        <tr>
-            <td>
-                <strong>Reference article: </strong>
-            </td>
-            <td>{{ article.AR_Ref }}</td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Design: </strong>
-            </td>
-            <td>
-                {{ article.AR_Design }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Code famille: </strong>
-            </td>
-            <td>
-                {{ article.FA_CodeFamille }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Intitulé: </strong>
-            </td>
-            <td>
-                {{ article.FA_Intitule }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Prix de vente </strong>
-            </td>
-            <td>
-                {{ article.AR_PrixVen|number_format(3) }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Code barre: </strong>
-            </td>
-            <td>
-                {{ article.AR_CodeBarre }}
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <strong>Pays: </strong>
-            </td>
-            <td>
-                {{ article.AR_Pays }}
-            </td>
-        </tr>
-    </table>
+<section class="panel">
+    <div class="panel-body bio-graph-info">
+        <h1>Détails Article</h1>
+        <div class="row">
+            <div class="bio-row">
+                <p><span><strong>Reference </strong></span>: {{ article.AR_Ref }} </p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Design </strong></span>: {{ article.AR_Design }}</p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Code famille </strong></span>: {{ article.FA_CodeFamille }}</p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Intitulé </strong></span>: {{ article.FA_Intitule }} </p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Prix de vente </strong></span>: {{ article.AR_PrixVen|number_format(3) }}</p>
+            </div>
+            <div class="bio-row">
+                <p><span><strong>Code barre </strong></span>: {{ article.AR_CodeBarre }}</p>
+            </div>
 
-</div>
+            <div class="bio-row">
+                <p><span><strong>Pays </strong></span>: {{ article.AR_Pays }} </p>
+            </div>
+        </div>
+    </div>
+</section>

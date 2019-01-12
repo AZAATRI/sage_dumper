@@ -1,4 +1,4 @@
-{% extends 'base.html.twig' %}
+{% extends 'basecommercial.html.twig' %}
 {% block stylesheets %}
     {{ parent() }}
     {{ encore_entry_link_tags('datatables') }}
@@ -9,40 +9,78 @@
 {% endblock javascripts %}
 {% block body %}
     {{ parent() }}
-    <div class="container">
-        <div class="jumbotron">
-            <h1>Hello</h1>
+    <div class="row">
+        <div class="col-lg-12">
+            <h3 class="page-header"><i class="fa fa-user-md"></i> Mes Documents</h3>
+            <ol class="breadcrumb">
+                <li><i class="fa fa-home"></i><a href="#">Documents</a></li>
+            </ol>
         </div>
     </div>
-    <section id="tabs">
-        <div class="container">
-            <h6 class="section-title h1">Documents</h6>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="col-md-8">
-                        <nav>
-                            <div class="nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                                <a class="nav-item nav-link" id="nav-documents-tab" data-toggle="tab" href="#nav-documents" role="tab" aria-controls="nav-documents" aria-selected="false">Vente documents</a>
-                                <a class="nav-item nav-link" id="nav-documents-article-tab" data-toggle="tab" href="#nav-documents-article" role="tab" aria-controls="nav-documents-article" aria-selected="false">Vente documents par article</a>
-                                <a class="nav-item nav-link" id="nav-documents-line-tab" data-toggle="tab" href="#nav-documents-line" role="tab" aria-controls="nav-documents-line" aria-selected="false">Vente ligne de documents</a>
-                            </div>
-                        </nav>
+    <div class="row">
+        <!-- profile-widget -->
+        <div class="col-lg-12">
+            <div class="profile-widget profile-widget-info">
+                <div class="panel-body">
+                    <div class="col-lg-2 col-sm-2">
+                        <h4>NOTNOTNOT</h4>
+                        <h6>Role</h6>
                     </div>
-                    <div class="tab-content py-3 px-3 px-sm-0" id="nav-tabContent">
-                        <div class="tab-pane fade" id="nav-documents" role="tabpanel" aria-labelledby="nav-documents-tab">
-                        </div>
-                        <div class="tab-pane fade" id="nav-documents-article" role="tabpanel" aria-labelledby="nav-documents-article-tab">
-                        </div>
-                        <div class="tab-pane fade" id="nav-documents-line" role="tabpanel" aria-labelledby="nav-documents-line-tab">
-                        </div>
+                    <div class="col-lg-4 col-sm-4 follow-info">
+                        <p>text text text</p>
+                        <h6>
+                            <span><i class="icon_clock_alt"></i>11:05 AM</span>
+                            <span><i class="icon_calendar"></i>25.10.13</span>
+                            <span><i class="icon_pin_alt"></i>NY</span>
+                        </h6>
                     </div>
-
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+    <!-- page start-->
+    <div class="row">
+        <div class="col-lg-12">
+            <section class="tab panel">
+                <header class="panel-heading tab-bg-info">
+                    <ul class="nav nav-tabs">
+                        <li>
+                            <a class="nav-link" id="nav-documents-tab" data-toggle="tab" href="#nav-documents">
+                                <i class="icon-user"></i>
+                                Vente documents
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="nav-documents-article-tab" data-toggle="tab" href="#nav-documents-article">
+                                <i class="icon-envelope"></i>
+                                Vente documents par article
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" id="nav-documents-line-tab" data-toggle="tab" href="#nav-documents-line">
+                                <i class="icon-envelope"></i>
+                                Vente ligne de documents
+                            </a>
+                        </li>
+                    </ul>
+                </header>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div id="nav-documents" class="tab-pane">
+                        </div>
+                        <div id="nav-documents-article" class="tab-pane">
+                        </div>
+                        <div id="nav-documents-line" class="tab-pane">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     <script>
         $(document).ready(function(){
+            $('#docs_menu').addClass("active");
+
             var firstTabSelector = $("#nav-documents-tab");
             firstTabSelector.on('click',function(event) {
                 var url = '{{ path('getdocumentsforcurrentcommercial') }}';
