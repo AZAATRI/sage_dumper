@@ -8,8 +8,8 @@
             <th>Dépot</th>
             <th>Quantité</th>
             <th>PU</th>
-            <th>MTHT</th>
-            <th>MTTTC</th>
+            <!--<th>MTHT</th>-->
+            <!--<th>MTTTC</th>-->
         </tr>
         </thead>
         <tbody>
@@ -21,8 +21,8 @@
                 <td>{{ document.DE_Intitule }}</a></td>
                 <td>{{ document.Qte|number_format(0) }}</td>
                 <td>{{ document.PU|number_format(3) }}</td>
-                <td>{{ document.MontantHT|number_format(3) }}</td>
-                <td>{{ document.MontantTTC|number_format(3) }}</td>
+                <!-- <td>{{ document.MontantHT|number_format(3) }}</td>-->
+                <!--<td>{{ document.MontantTTC|number_format(3) }}</td>-->
             </tr>
         {% endfor %}
         </tbody>

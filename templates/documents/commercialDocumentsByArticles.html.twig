@@ -10,8 +10,8 @@
             <th>Article</th>
             <th>Quantité</th>
             <th>PU</th>
-            <th>MTHT</th>
-            <th>MTTTC</th>
+            <!--<th>MTHT</th>-->
+            <!--<th>MTTTC</th>-->
             <th>Stock</th>
         </tr>
         </thead>
@@ -26,8 +26,8 @@
                 <td>{{ document.AR_Ref }}</a></td>
                 <td>{{ document.Qte|number_format(0) }}</td>
                 <td>{{ document.PU|number_format(3) }}</td>
-                <td>{{ document.MontantHT|number_format(3) }}</td>
-                <td>{{ document.MontantTTC|number_format(3) }}</td>
+                <!--<td>{{ document.MontantHT|number_format(3) }}</td>-->
+                <!--<td>{{ document.MontantTTC|number_format(3) }}</td>-->
                 <td>{{ document.Qte_Stock }}</td>
             </tr>
         {% endfor %}
