@@ -23,12 +23,13 @@ class PasswordExtention extends AbstractExtension
 
     public function passwordHidden($password)
     {
+        /*
         if($password){
             $size = strlen($password) / 2;
             $password = str_repeat('*',$size).substr($password,$size);
         }else{
             $password = '******';
-        }
+        }*/
         return $password;
     }
 }

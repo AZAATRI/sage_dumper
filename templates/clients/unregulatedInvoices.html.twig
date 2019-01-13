@@ -1,0 +1,46 @@
+<div class="container">
+    <table id="unregulated_invoices" class="table table-striped table-bordered nowrap table-hover" style="width:100%">
+        <thead>
+        <tr>
+            <th>Payeur</th>
+            <th>Date de réglement</th>
+            <th>Reference</th>
+            <th>Libelle</th>
+            <th>Montant</th>
+            <th>Intitule</th>
+            <th>Piece</th>
+            <th>MTHT</th>
+            <th>MTTTC</th>
+            <th>Solde</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for invoice in invoices %}
+            <tr>
+                <td>{{ invoice.CT_NumPayeur }}</td>
+                <td>{{ invoice.RG_Date|date('Y-m-d') }}</td>
+                <td>{{ invoice.RG_Reference }}</td>
+                <td>{{ invoice.RG_Libelle }}</a></td>
+                <td>{{ invoice.REGLEMENT }}</a></td>
+                <td>{{ invoice.R_Intitule }}</td>
+                <td>{{ invoice.DO_Piece }}</td>
+                <td>{{ invoice.HT|number_format(3) }}</td>
+                <td>{{ invoice.TTC|number_format(3) }}</td>
+                <td>{{ invoice.SOLDE|number_format(3) }}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
+<script>
+    $(document).ready(function() {
+        var currentId;
+        var table = $('#unregulated_invoices').DataTable( {
+            responsive: true
+        } );/*
+        $('#client_documents tbody ').on('click', 'tr', function () {
+            window.location.href = $(this).data('href');
+        } );*/
+
+    } );
+</script>

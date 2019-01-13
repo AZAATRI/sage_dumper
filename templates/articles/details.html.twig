@@ -1,4 +1,5 @@
 {% extends 'basecommercial.html.twig' %}
+{% block title %}Article {{ article.AR_Ref }}{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     {{ encore_entry_link_tags('datatables') }}

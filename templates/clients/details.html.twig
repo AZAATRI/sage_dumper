@@ -1,4 +1,5 @@
 {% extends 'basecommercial.html.twig' %}
+{% block title %}Client {{ client.CT_Intitule }}{% endblock %}
 {% block stylesheets %}
     {{ parent() }}
     {{ encore_entry_link_tags('datatables') }}
@@ -64,7 +65,7 @@
                             </a>
                         </li>
                         <li>
-                            <a class="nav-link" id="nav-documents-line-tab" data-toggle="tab" href="#nav-documents-line">
+                            <a class="nav-link" id="nav-unregulated-invoices-tab" data-toggle="tab" href="#nav-unregulated-invoices">
                                 <i class="icon-envelope"></i>
                                 Factures non réglées
                             </a>
@@ -82,7 +83,7 @@
                         </div>
                         <div id="nav-documents-article" class="tab-pane">
                         </div>
-                        <div id="nav-documents-line" class="tab-pane">
+                        <div id="nav-unregulated-invoices" class="tab-pane">
                         </div>
                     </div>
                 </div>
@@ -118,14 +119,14 @@
                 });
                 $(this).off('click');
             });
-            $("#nav-documents-line-tab").on('click',function(event) {
-                var url = '{{ path('getlinedocumentsforcurrentclient',{id : 'clientId'}) }}';
+            $("#nav-unregulated-invoices-tab").on('click',function(event) {
+                var url = '{{ path('getunregulatedinvoices',{id : 'clientId'}) }}';
                 url = url.replace('clientId',clientId);
                 $.ajax({
                     type: "POST",
                     url:url,
                     success: function(data) {
-                        $("#nav-documents-line").append(data.response);
+                        $("#nav-unregulated-invoices").append(data.response);
                     }
                 });
                 $(this).off('click');

@@ -80,7 +80,22 @@ class ClientsManagerController extends BaseCommercialController
         }
         return new JsonResponse($jsonResponse);
     }
-
+    /**
+     * @Route("/clients/{id}/invoices", name="getunregulatedinvoices")
+     */
+    public function clientUnregulatedInvoices($id,Request $request,SqlServerManager $sqlServerManager) : Response
+    {
+        $jsonResponse = array('code' => 500);
+        if($request->isXmlHttpRequest()){
+            $invoices = $sqlServerManager->getUnregulatedInvoicesByClient($id,$this->getCurrentCommercial()->getCKey());
+            $response = $this->render('clients/unregulatedInvoices.html.twig',array(
+                'invoices'=>$invoices
+            ))->getContent();
+            $jsonResponse['response'] = $response;
+            $jsonResponse['code'] = 200;
+        }
+        return new JsonResponse($jsonResponse);
+    }
     private function addStockValueColumn(SqlServerManager $sqlServerManager,$dataWithArticlesAndDepot = array()){
         $stocks = $sqlServerManager->getStockArticles();
         $indexedStocks = array();

@@ -187,4 +187,43 @@ order by E.DO_Piece";
         $result = $query->fetchAll(\PDO::FETCH_ASSOC);
         return $result;
     }
+    public function getUnregulatedInvoicesByClient($clientRef,$commercialRef){
+        $query = "
+        select C.CT_NumPayeur,RG_Date,RG_Reference,RG_Libelle,RG_Montant REGLEMENT,P.R_Intitule,R.DO_Piece
+        ,DOC.CO_No NumRepresentant,DOC.CT_Num,DOC.HT,DOC.TTC,(DOC.TTC-RG_Montant) SOLDE
+        from F_CREGLEMENT c 
+        inner join F_REGLECH R on C.RG_No = R.RG_No  
+        inner join P_REGLEMENT P on P.cbIndice = c.N_Reglement
+        INNER JOIN 
+        (
+            select DO_Domaine,DO_Type,DO_Piece,CT_Num,DO_Date,CO_No,Sum(DL_MontantHT) HT,Sum(DL_MontantTTC) TTC
+            from F_DOCLIGNE 
+            where DO_Domaine = 0 and CT_Num = '$clientRef' and CO_No = '$commercialRef'
+            group by DO_Domaine,DO_Type,DO_Piece,CT_Num,DO_Date,CO_No
+        ) DOC on DOC.DO_Piece = R.DO_Piece and DOC.DO_Domaine = R.DO_Domaine
+        where (DOC.TTC-RG_Montant) < 0";
+        $query = $this->_pdo->query($query);
+        $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+        return $result;
+    }
+    public function getUnregulatedInvoicesByCommercial($commercialRef){
+        $query = "
+        select C.CT_NumPayeur,RG_Date,RG_Reference,RG_Libelle,RG_Montant REGLEMENT,P.R_Intitule,R.DO_Piece
+        ,DOC.CO_No NumRepresentant,DOC.CT_Num,DOC.HT,DOC.TTC,(DOC.TTC-RG_Montant) SOLDE
+        from F_CREGLEMENT c 
+        inner join F_REGLECH R on C.RG_No = R.RG_No  
+        inner join P_REGLEMENT P on P.cbIndice = c.N_Reglement
+        INNER JOIN 
+        (
+            select DO_Domaine,DO_Type,DO_Piece,CT_Num,DO_Date,CO_No,Sum(DL_MontantHT) HT,Sum(DL_MontantTTC) TTC
+            from F_DOCLIGNE 
+            where DO_Domaine = 0 and CO_No = '$commercialRef'
+            group by DO_Domaine,DO_Type,DO_Piece,CT_Num,DO_Date,CO_No
+        ) DOC on DOC.DO_Piece = R.DO_Piece and DOC.DO_Domaine = R.DO_Domaine
+        where (DOC.TTC-RG_Montant) < 0";
+
+        $query = $this->_pdo->query($query);
+        $result = $query->fetchAll(\PDO::FETCH_ASSOC);
+        return $result;
+    }
 }

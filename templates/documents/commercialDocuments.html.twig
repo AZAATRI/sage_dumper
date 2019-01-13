@@ -3,6 +3,7 @@
         <thead>
         <tr>
             <th>Piece</th>
+            <th>Type</th>
             <th>Client</th>
             <th>Date</th>
             <th>Reference</th>
@@ -17,6 +18,7 @@
         {% for document in documents %}
             <tr>
                 <td>{{ document.DO_Piece }}</td>
+                <td>{{ document.DO_Type|document_type }}</td>
                 <td>{{ document.CT_Intitule }}</td>
                 <td>{{ document.DO_Date|date('Y-m-d') }}</td>
                 <td>{{ document.Ref_Document }}</td>
@@ -35,7 +37,17 @@
         var currentId;
         var table = $('#client_documents').DataTable( {
             responsive: true
-        } );/*
+        } );
+/*
+        function resize() {
+            console.log('lkj');
+            $($.fn.dataTable.tables(true)).DataTable()
+                .columns.adjust()
+                .responsive.recalc();
+        }
+
+        window.addEventListener('resize', resize);*/
+        /*
         $('#client_documents tbody ').on('click', 'tr', function () {
             window.location.href = $(this).data('href');
         } );*/

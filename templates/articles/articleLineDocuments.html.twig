@@ -3,6 +3,7 @@
         <thead>
         <tr>
             <th>Piece</th>
+            <th>Type</th>
             <th>Client</th>
             <th>Date</th>
             <th>Reference</th>
@@ -19,8 +20,9 @@
         {% for document in lines %}
             <tr>
                 <td>{{ document.DO_Piece }}</td>
+                <td>{{ document.DO_Type|document_type }}</td>
                 <td>{{ document.CT_Intitule }}</td>
-                <td>{{ document.DO_Date }}</td>
+                <td>{{ document.DO_Date|date('Y-m-d') }}</td>
                 <td>{{ document.Ref_Document }}</td>
                 <td>{{ document.DE_Intitule }}</a></td>
                 <td>{{ document.AR_Ref }}</a></td>
